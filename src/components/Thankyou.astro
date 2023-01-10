@@ -1,0 +1,260 @@
+
+<style>
+	.ty-download-button{
+		background: rgb(113,113,113);
+		background: -webkit-linear-gradient(bottom, rgba(113,113,113,0) 0%, rgba(202,154,62,1) 0%, rgba(209,164,66,1) 100%);
+		background: -o-linear-gradient(bottom, rgba(113,113,113,0) 0%, rgba(202,154,62,1) 0%, rgba(209,164,66,1) 100%);
+		background: linear-gradient(to top, rgba(113,113,113,0) 0%, rgba(202,154,62,1) 0%, rgba(209,164,66,1) 100%);
+		color: #fff;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 15px 25px;
+		border-radius: 5px;
+		margin-top: 130px;
+		display: inline-block;
+		text-decoration: none;
+	}
+	.button-option{
+		background: rgb(113,113,113);
+		background: -webkit-linear-gradient(bottom, rgba(113,113,113,0) 0%, rgba(202,154,62,1) 0%, rgba(209,164,66,1) 100%);
+		background: -o-linear-gradient(bottom, rgba(113,113,113,0) 0%, rgba(202,154,62,1) 0%, rgba(209,164,66,1) 100%);
+		background: linear-gradient(to top, rgba(113,113,113,0) 0%, rgba(202,154,62,1) 0%, rgba(209,164,66,1) 100%);
+		color: #fff;
+		color: #fff;
+		font-size: 18px;
+		font-weight: bold;
+		padding: 15px 25px;
+		border-radius: 5px;
+		margin: 10px 10px 40px 10px;
+		display: inline-block;
+		text-decoration: none;
+		cursor: pointer;
+	}		
+	img {
+		max-width:100%;
+	}
+	
+	.line-1{
+		font-size: 31px;
+		text-align: center;
+		font-weight: 700;
+		margin-bottom:30px;
+	}
+	.line-2{
+		text-align: center;
+		margin-bottom:30px;
+	}
+	.ty-content-left{
+		width:55%;
+		float:left;
+		padding:40px 15px;
+	}
+	.ty-content-right{
+		width:45%;
+		float:right;
+			padding: 0px 15px 0px 15px;
+		text-align: center;
+	}
+	.font-20{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.float-50{
+		float:left;
+		width:50%;
+	}
+	.blue-underline {
+			background: url(/images/ty-underline2.png) no-repeat -3px 25px;
+		width: 132px;
+		position: absolute;
+		height: 44px;
+		left: 2px;
+		top: -4px;
+	}
+	.link{
+		color:#314d89;
+		cursor: pointer;
+		text-decoration: none;
+		font-weight: normal!important;
+		text-align: center;
+		width: 100%!important;
+		/* background-color: red; */
+		height: 100%!important;
+		display: block;
+		margin-top: 4px;
+		min-height: 40px;
+	}
+	.line-3{
+		padding-top: 30px;
+		padding-left:30px;
+	}
+	.line-4{
+		padding-left:30px;
+	}
+		.logo-left {
+			text-align: left;
+			width:40%;
+			float:left;
+		}
+		.logo-right {
+			text-align: right;
+			width:60%;
+			float:right;
+		}
+	.download-left{
+		width:10%;
+		float:right;
+		padding-top: 6px;
+	}
+	.download-right{
+		width:70%;
+		float:right;
+		display: flex;
+		justify-content: end;
+	}
+
+	@media only screen and (max-width: 1170px) {
+		.ty-content-left{
+			width:100%;
+			float:inherit;
+			text-align: center;
+		}
+		.ty-content-right{
+			width: 100%;
+			float: inherit;
+			text-align: center;
+			padding: 0px 15px 10px 15px;
+			text-align: center;
+			min-height: auto;
+		}
+		.float-50{
+			width:100%;
+		}
+		.line-3{
+			padding-left:0px;
+		}
+		.line-4{
+			padding-left:0px;
+		}
+		.ty-download-button{
+			margin-top:10px;
+		}
+			.logo-left {
+			text-align: center;
+			width:100%;
+			float:left;
+		}
+		.logo-right {
+			text-align: center;
+			width:100%;
+			float:right;
+		}
+			.prompt{
+				display: none;
+			}
+	.download-left{
+		width:30%;
+		float:left;
+		text-align: right;
+	}
+	.download-right{
+		width:70%;
+		float:right;
+		display: inline-block;
+		justify-content: center;
+	}
+	}
+
+	@media only screen and (max-width: 550px) {
+		.quali-progress-question-box {
+			width: 100%;
+		}
+	}
+
+</style>
+<style>
+	.download-options{
+		display: none;
+		border-bottom: 0px solid #5a5a5a;
+		padding:10px ;
+		margin-top:10px;
+	}
+	.download-option{
+		float:left;
+		width: 12%;
+		margin: 1%;
+	}
+	.download-link{
+		border: 1px solid #d1d1d1;
+		background-color: rgb(239, 239, 239);
+		margin-bottom: 20px;
+		border-radius: 10px;
+		padding: 10px 10px 10px 10px;
+		/* font-weight: bold; */
+		min-height: 255px;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -10px, rgba(0, 0, 0, 0.3) 0px 20px 20px -20px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	}
+	.download-link{
+		/* border: 1px solid #7d7d7d; */
+		/* background-color: #695118; */
+		/* background: rgb(131,103,16);
+background: linear-gradient(184deg, rgba(131,103,16,1) 0%, rgba(214,176,25,1) 33%, rgba(172,141,15,1) 56%);
+		border-radius: 5px;
+		padding: 5px;
+		font-weight: bold;
+		min-height: 215px; */
+	}
+	.ty-link-image{
+		width:100%;
+	}
+	.featured {
+		background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+		border: 1px solid #9f7928; 	
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 100px -10px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	}
+	.featured a {
+		color: white !important;
+	}
+	@media only screen and (max-width: 1170px) {
+		.download-options{
+		}
+		.download-option{
+			float:left;
+			width:48%;
+			
+		}
+						
+	}
+</style>
+
+
+    
+
+                <div class="download-option">
+                    <div class="download-link featured"><a class="link ty-link-image" href="https://www.augustapreciousmetals.com/investor-kits/gold-and-silver-ira-guide" target="_blank"> <img src="./images/brochure-gsira-large-title-flat.png" role="presentation" alt="Image of Augusta brochure" style="height:150px; margin:auto;"></a><br><a class="link" href="https://www.augustapreciousmetals.com/investor-kits/gold-and-silver-ira-guide" target="_blank">FREE Gold IRA Guide</a> </div>
+                </div>
+                <div class="download-option">
+                    <div class="download-link"><a class="link ty-link-image" href="https://www.augustapreciousmetals.com/investor-kits/investing-in-gold-and-silver-guide" target="_blank"><img src="./images/brochure-gs-large-title-flat.png" role="presentation" alt="Image of Augusta brochure" style="height:150px; margin:auto;"></a><br><a class="link" href="https://www.augustapreciousmetals.com/investor-kits/investing-in-gold-and-silver-guide" target="_blank">Why Precious Metals</a> </div>
+                </div>
+                <div class="download-option">
+                    <div class="download-link"><a class="link ty-link-image" href="https://www.augustapreciousmetals.com/media/pdf/reports/Devaluation-of-the-Dollar.pdf" target="_blank"> <img src="./images/cover-small.png" role="presentation" alt="Image of Augusta brochure" style="height:150px; margin:auto;"></a><br><a class="link" href="https://www.augustapreciousmetals.com/media/pdf/reports/Devaluation-of-the-Dollar.pdf" target="_blank">Devaluation of the Dollar</a> </div>
+                </div>
+                <div class="download-option">
+                    <div class="download-link"><a class="link ty-link-image" href="https://www.augustapreciousmetals.com/media/pdf/reports/Downside-of-a-Digital-Dollar.pdf" target="_blank"> <img src="./images/digi-cover-small.png" role="presentation" alt="Image of Augusta brochure" style="height:150px; margin:auto;"></a><br><a class="link" href="https://www.augustapreciousmetals.com/media/pdf/reports/Downside-of-a-Digital-Dollar.pdf" target="_blank">Downside of a Digital Dollar</a> </div>
+                </div>
+                <div class="download-option">
+                    <div class="download-link"><a class="link ty-link-image" href="https://www.augustapreciousmetals.com/investor-kits/augusta-corporate-brochure" target="_blank"><img src="./images/brochure-corp-large-title-flat.png" role="presentation" alt="Image of Augusta brochure" style="height:150px; margin:auto;"></a><br><a class="link" href="https://www.augustapreciousmetals.com/investor-kits/augusta-corporate-brochure" target="_blank">Welcome to Augusta</a> </div>
+                </div>
+                <div class="download-option">
+                    <div class="download-link"><a class="link ty-link-image" href="https://www.augustapreciousmetals.com/media/why-choose-augusta" target="_blank"> <img src="./images/brochure-why-choose-augusta.png" role="presentation" alt="Image of Augusta brochure" style="height:150px; margin:auto;"></a><br><a class="link" href="https://www.augustapreciousmetals.com/media/why-choose-augusta" target="_blank">Why Choose Augusta</a> </div>
+                </div>
+                
+                
+                <div class="download-option">
+                    <div class="download-link"><a class="link ty-link-image" href="https://www.augustapreciousmetals.com/fee-sheets/depository" target="_blank"><img src="./images/brochure-feegsira.png" role="presentation" alt="Image of Augusta brochure" style="height:150px; margin:auto;"></a><br><a class="link" href="https://www.augustapreciousmetals.com/fee-sheets/depository" target="_blank">Setup &amp; Pricing Information</a> </div>
+                </div>
+                
+                <div style="clear: both;"></div>
+
+    

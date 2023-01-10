@@ -137,11 +137,7 @@ function getParams() {
         document.getElementById('i-have-401').checked = false;
 
     }
-} <
-/script>
-
-<
-script >
+}
 
     function postToForm(firstname, lastname, email, phone, leadSource, myIRA, my401) {
         // set url params for thankyou page
@@ -221,13 +217,8 @@ myForm.addEventListener('submit', function(e) {
         ihave401 = 'off';
         my401 = 'no';
     }
-
-
-
-
     postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
-
-
-
-
 });
+
+
+    

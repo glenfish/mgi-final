@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/ConfirmationPageLayout.astro';
+import Thankyou from '../components/Thankyou.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="MyGoldIRA - Thank you!">
+	<main>
+		<div class="main-container r100vw flex-wrapper" style="max-width:1200px!important; margin: auto;">
+			<section style="margin-bottom:0px!important;">
+				
+						<h2 class="content-1 garamond headline congrats "style=" padding-top: 40px!important;">Congratulations!</h2>
+				
+						  <p style=" font-size: 1.2rem!important; padding: 50px 20px 0 20px!important;"><strong><span id="clientFirstname"></span>please watch the video below and then scroll down to download your Free Gold IRA Guide and other reports. A representative from Augusta Precious Metals will be in touch with you at <span id="clientPhone" style="font-weight: bold;"></span> in the next 24 to 48 hours.</strong></p>
+						  
+						  
+					  
+				 </section>
+				 <section>
+					<div class="bodyclass">
+						
+					  
+					   <script src="https://fast.wistia.com/embed/medias/dksfpk300k.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_dksfpk300k seo=false videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/dksfpk300k/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+					   <h2 class="content-1 free-guide" style=""><span id="clientFirstname2"></span>Get Your Free Guides Here</h2>
+					   <p><strong>Your PDF downloads from Augusta Precious Metals:</strong></p>
+					</div>
+				 </section>
+				 
+				 <div class="iframe-container">
+					<div class="thankyou"><Thankyou /></div>
+					<!-- <iframe 
+					   src="../thankyou/thankyou.html" 
+					   title="download links" 
+					   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					   allowfullscreen
+					   ></iframe> -->
+				 </div>
+				 <section>
+					<div class="bodyclass" style="margin: auto!important;">	
+						<h2 style=" text-align: center">10 Gold IRA Dealer Lies</h2>
+						<div class="embed-container">
+						 <iframe src="https://www.youtube.com/embed/g222dG1nY7I" frameborder="0" allowfullscreen="" data-lf-form-tracking-inspected-3p1w24drrnn8my5n="true" data-lf-yt-playback-inspected-3p1w24drrnn8my5n="true"></iframe>
+						</div>	
+						<h2 style=" text-align: center">Bad Reasons To Buy Gold & Silver</h2> 
+						 <div class="embed-container">
+						 <iframe src="https://www.youtube.com/embed/vp06NywDU24" frameborder="0" allowfullscreen="" data-lf-form-tracking-inspected-3p1w24drrnn8my5n="true" data-lf-yt-playback-inspected-3p1w24drrnn8my5n="true"></iframe>
+						<!-- <iframe    style=" margin: 20px auto!important;" width="560" height="315" src="https://www.youtube.com/embed/vp06NywDU24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+						</div>
+					</div>
+				</section>
+
+					
+			
+		</div>
+		<Footer />
+		
+	</main>
+</Layout>
+
+<style>
+
+.bodyclass {
+			padding:20px;
+		}
+
+		.bodyclass h2 {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.width-max {
+			width: 100vw!important;
+			max-width: 900px;
+			margin: auto;
+		}
+		@media (min-width: 220px) and (max-width: 700px) {
+			.width-max {
+			font-size: 1.0rem!important;
+		}
+		}
+
+		.main-container {
+		font-weight: 500!important;
+	}
+	.main-container p {
+		padding: 15px 0px;
+	}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+</style>
+<style>
+	.iframe-container {
+	  position: relative;
+	  width: 100%;
+	  /* padding-top: 56.25%; */
+	  flex-grow: 1;
+	  /* overflow:hidden; */
+	  /* min-height:1220px; */
+	}
+	
+	.iframe-container > div.thankyou {
+	  /* position: absolute; */
+	  top: 0;
+	  left: 0;
+
+	}
+	.congrats {
+		font-size: 60px!important; color: #caa872!important;
+	}
+	.free-guide {
+		padding-top:50px!important;
+	}
+
+	
+
+	@media (max-width: 700px) {
+		.congrats {
+			font-size: 50px!important;
+			color: #caa872!important;
+			letter-spacing: -1px ;
+		}
+			.free-guide {
+				font-size:25px!important;
+		}
+	}	
+	.embed-container { position: relative; margin-bottom: 30px;padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+	</style>
