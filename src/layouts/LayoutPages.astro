@@ -1,0 +1,57 @@
+---
+export interface Props {
+	title: string;
+}
+
+
+
+import Head from '../components/Head.astro';
+import Tracking from '../components/Tracking.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="description" content="We help people protect their wealth through gold and silver and a self directed IRA">
+		<meta name="keywords" content="gold ira, silver ira, precious metals ira, self directed ira">
+		<meta property="og:title" content="MyGoldIRA">
+		<meta property="og:description" content="We help people protect their wealth through gold and silver and a self directed IRA">
+		<meta property="og:image" content="">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/tailwind.css">
+		<!-- Google Tag Manager -->
+			<script client:load>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TMW6WRX');</script>
+	
+		<!-- Google tag (gtag.js) --> <script client:load async src="https://www.googletagmanager.com/gtag/js?id=AW-11045486271"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11045486271'); </script>
+	
+		<!-- End Google Tag Manager -->	
+		
+		<title>MyGoldIRA</title>
+	</head>
+	<body onload='getParams();'>
+		<Tracking />
+		<slot />
+		
+	</body>
+</html>
+<style is:global>
+html { font-size: calc(0.625rem + 0.41666666666666663vw); }
+@media screen and (max-width:1920px) { html { font-size: calc(0.625rem + 0.41666666666666674vw); } }
+@media screen and (max-width:1440px) { html { font-size: calc(0.8126951092611863rem + 0.20811654526534862vw); } }
+@media screen and (max-width:479px) { html { font-size: calc(0.7494769874476988rem + 0.8368200836820083vw); } }
+@font-face {
+font-family: 'Cormorant Garamond Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Cormorant Garamond Italic'), url('./css/CormorantGaramond-Italic.woff') format('woff');
+}
+</style>
