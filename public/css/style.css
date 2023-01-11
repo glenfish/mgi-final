@@ -62,7 +62,7 @@
       display: inline-block!important;
    }
    .headline {
-   font-family: 'Garamond', 'Cormorant Garamond Italic', serif!important;
+   font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
    font-size: 40px!important;
    padding-bottom: 10px!important;
    font-weight: 900!important;
@@ -72,7 +72,7 @@
    text-align:center;
    }
    .gam-blue {
-   font-family: 'Garamond', 'Cormorant Garamond Italic', serif!important;
+   font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
    font-size: 50px!important;
    padding-bottom: 10px!important;
    font-weight: 900!important;
@@ -80,7 +80,7 @@
    }
 
    .garamond {
-   font-family: 'Garamond', 'Cormorant Garamond Italic', serif!important;
+   font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
    font-size: 24px!important;
    color: rgb(50, 50, 50)!important;
    padding-bottom: 20px!important;
@@ -193,7 +193,7 @@
          display: inline-block!important;
       }
       .headline {
-      font-family: 'Garamond', 'Cormorant Garamond Italic', serif!important;
+      font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
       font-size: 40px!important;
       padding-bottom: 10px!important;
       font-weight: 900!important;
@@ -203,7 +203,7 @@
       text-align:center;
       }
       .gam-blue {
-      font-family: 'Garamond', 'Cormorant Garamond Italic', serif!important;
+      font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
       font-size: 50px!important;
       padding-bottom: 10px!important;
       font-weight: 900!important;
@@ -218,7 +218,7 @@
       text-align:center;
       }
       .garamond {
-      font-family: 'Garamond', 'Cormorant Garamond Italic', serif!important;
+      font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
       font-size: 24px!important;
       color: rgb(50, 50, 50)!important;
       padding-bottom: 20px!important;
@@ -672,7 +672,7 @@ padding: 80px 10px!important;
 @media (min-width: 220px) and (max-width: 530px) {
 .mobile {
 font-size: 30px!important;
-font-family: 'Garamond', serif!important;
+font-family: 'EB Garamond', serif!important;
 /* letter-spacing:-2px!important; */
 }
 .ap-SJNso-d4s4 {
@@ -681,14 +681,14 @@ padding: 4px 0px!important;
 --spacing-bottom: 0px;
 }
 .headline {
-font-family: 'Garamond', 'Cormorant Garamond Italic', serif!important;
+font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
 font-size: 34px!important;
 padding-bottom: 10px!important;
 letter-spacing:-2px!important;
 word-spacing: 1px!important;
 }
 .gam-blue {
-font-family: 'Garamond', 'Cormorant Garamond Italic', serif;
+font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif;
 font-size: 40px!important;
 padding-bottom: 10px!important;
 font-weight: 900!important;
@@ -884,7 +884,7 @@ margin-top:20px;
    min-height: 150px;
 }
 
-@media screen and  (max-width:691px) { 
+@media  (max-width:810px) { 
 .break-headline {
    display:inline!important;
 
