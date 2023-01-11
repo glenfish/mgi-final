@@ -697,8 +697,10 @@ color: #304A73!important;
 text-align: center;
 }
 .join-americans {
-text-align: center;
-}
+   /* font-family: 'CCormorant Garamond Italic', serif!important; */
+   font-size: 0.8rem!important;
+   text-align:center;
+   }
 }
 @media  (min-width: 1250px)  { 
    #formContainer {
@@ -737,7 +739,7 @@ text-align: center;
    }
 
    .join-americans {
-      font-size: 1.6rem!important;
+      font-size: 1.2rem!important;
    }
 
  }
