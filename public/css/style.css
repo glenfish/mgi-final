@@ -61,17 +61,7 @@
       -webkit-transform: scale(1.3,1.3);
       display: inline-block!important;
    }
-   .headline {
-   font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
-   font-size: 40px!important;
-   padding-bottom: 10px!important;
-   font-weight: 900!important;
-   color: #caa872!important;
-   text-decoration: underline;
-   line-height: 26px!important;
-   text-align:center;
-   letter-spacing:-3px!important;
-   }
+
    .gam-blue {
    font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
    font-size: 50px!important;
@@ -202,6 +192,7 @@
       text-decoration: underline;
       line-height: 26px!important;
       text-align:center;
+      /* letter-spacing:-3px!important; */
       }
       .gam-blue {
       font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
@@ -683,10 +674,10 @@ padding: 4px 0px!important;
 }
 .headline {
 font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif!important;
-font-size: 34px!important;
+font-size: 30px!important;
 padding-bottom: 10px!important;
 letter-spacing:-2px!important;
-word-spacing: 1px!important;
+word-spacing: 2px!important;
 }
 .gam-blue {
 font-family: 'EB Garamond', 'Cormorant Garamond Italic', serif;
