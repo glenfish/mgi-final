@@ -574,7 +574,7 @@ width: 100%;
 .text-icon-container .text-icon .text-icon-content {
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: top;
 }
 .text-icon-container .text-icon .text-icon-inline {
 vertical-align: top;
