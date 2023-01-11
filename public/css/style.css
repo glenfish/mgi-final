@@ -349,8 +349,17 @@ width: 750px
 }
 @media(min-width: 992px) {
 .main-container .container {
-width: 970px
+width: 990px;
+
 }
+
+}
+
+@media(max-width: 991px) {
+   .text-icon-container .text-icon {
+      display: flex!important;
+   
+      }
 }
 @media(min-width: 1200px) {
 .main-container .container {
@@ -539,7 +548,7 @@ background-attachment: inherit !important
 color: #3e3e3e
 }
 .main-container section .image-element {
-min-width: 125px
+min-width: 155px
 }
 .main-container .popup-holder {
 position: relative
@@ -557,35 +566,39 @@ padding-left: 0px
 }
 }
 
-@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Dosis:ital,wght@0,400;0,700;1,400;1,700&family=Exo:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:ital,wght@0,400;0,700;1,400;1,700&family=Hind:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,400;0,700;1,400;1,700&family=Rokkitt:ital,wght@0,400;0,700;1,400;1,700&family=Yantramanav:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,400;0,700;1,400;1,700&family=Mada:ital,wght@0,400;0,700;1,400;1,700&family=Prompt:ital,wght@0,400;0,700;1,400;1,700&family=Khand:ital,wght@0,400;0,700;1,400;1,700&family=Saira:ital,wght@0,400;0,700;1,400;1,700&family=Yrsa:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 .text-icon-container {
 position: relative;
-width: 100%
+width: 100%;
+
 }
 .text-icon-container .text-icon {
-display: flex;
-align-items: left;
-justify-content: left;
+/* display: flex; */
+
 width: 100%;
-height: auto
+/* height: auto; */
 }
 .text-icon-container .text-icon .text-icon-inline,
 .text-icon-container .text-icon .text-icon-content {
 display: flex;
 flex-direction: column;
-justify-content: left
+justify-content: center;
 }
 .text-icon-container .text-icon .text-icon-inline {
-vertical-align: middle;
-align-self: center;
+vertical-align: top;
+align-self: top;
 height: initial;
 padding-right: 20px;
-width: 75px;
-text-align: center
+width: 95px;
+text-align: center;
 }
 .text-icon-container .text-icon .text-icon-content {
 width: 100%;
-padding: 15px 0
+padding-bottom: 20px;
+vertical-align: top;
+/* align-self: top; */
+/* height: initial; */
+/* background-color: rgb(255, 238, 238); */
+margin-bottom: 50px;
 }
 [class*=ck-editor] {
 margin: 0 !important;
@@ -596,7 +609,8 @@ border: none !important
 font-size: 28px
 }
 .ck p {
-font-size: 18px
+font-size: 18px;
+
 }
 @media(max-width: 1200px) {
 .ck h2 {
@@ -618,15 +632,13 @@ font-size: 14px
 color: rgba(109, 185, 129, 1);
 }
 .ck h2 {
-font-family: 
+
 
 }
-.ck p {
-font-family: ;
-}
+
 
 h1{
-font-family: 'Gentium Plus', serif!important;}
+font-family: serif!important;}
 
 
 .multi-section-holder{display:flex;transition:transform 200ms;overflow-x:hidden}.multi-step-section{width:100%}
@@ -661,7 +673,7 @@ padding-bottom: 50px!important;
 
 .ap-SJNso-d4s4 {
 border-radius: 0px!important;
-padding: 80px 0px!important;
+padding: 80px 10px!important;
 --spacing-bottom: 24px;
 }
 @media (min-width: 220px) and (max-width: 530px) {
@@ -828,12 +840,17 @@ top: 20px;
 
 
 
-
+#footer li a:hover {
+   color: white;
+   
+}
 
 
 
 body .ck p {
-color: rgb(185, 137, 5)!important;
+/* color: rgb(185, 137, 5)!important; */
+/* color: #304A73!important; */
+color: #3e3e3e!important;
 font-weight: 400;
 }
 
@@ -843,23 +860,29 @@ font-weight: 500;
 }
 
 .fa-hands-helping:before {
-content: url(../images/safe.svg);
-
+content: url(/images/safe.svg);
+/* top:50px!important;
+height:200px!important; */
 
 
 }
 .fa-donate:before {
-content: url(../images/wallet.svg);
+content: url(/images/wallet.svg);
 
 }
 .fa-chart-line:before {
-content: url(../images/presentation.svg);
+content: url(/images/presentation.svg);
 
 }
 .fa-comments-dollar:before {
-content: url(../images/globe.svg);
+content: url(/images/globe.svg);
 }
 .extra-margin {
 margin-top:20px;
+}
+
+.col-box-content  p {
+   color: #304A73!important;
+   /* max-width: 300px; */
 }
 
