@@ -86,14 +86,7 @@
    font-weight: 900!important;
    color: #304A73!important;
    }
-   .join-americans {
-   /* font-family: 'CCormorant Garamond Italic', serif!important; */
-   font-size: 2rem!important;
-   padding-bottom: 10px!important;
-   font-weight: 900!important;
-   color: #ab8445!important;
-   text-align:center;
-   }
+
    .garamond {
    font-family: 'Cormorant Garamond Italic', serif!important;
    font-size: 24px!important;
@@ -224,7 +217,7 @@
       }
       .join-americans {
       /* font-family: 'CCormorant Garamond Italic', serif!important; */
-      font-size: 2rem!important;
+      font-size: 1.2rem!important;
       padding-bottom: 10px!important;
       font-weight: 900!important;
       color: #ab8445!important;
