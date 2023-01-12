@@ -700,7 +700,7 @@ word-spacing: 2px!important;
  @media  (min-width: 480px) and (max-width:530px) { 
    .gam-blue {
       font-size: 2.8rem!important;
-      letter-spacing: 3px!important;
+      /* letter-spacing: 3px!important; */
    }
  }
  @media (max-width:479px) { 
@@ -711,13 +711,13 @@ word-spacing: 2px!important;
    }
    .gam-blue {
       font-size: 2.5rem!important;
-      letter-spacing: 3px!important;
+      /* letter-spacing: 3px!important; */
    }
  }
  @media (max-width:385px) { 
    .gam-blue {
       font-size: 2.125rem!important;
-      letter-spacing: 3px!important;
+      /* letter-spacing: 3px!important; */
    }
  }
  @media (max-width:302px) { 
@@ -936,7 +936,7 @@ margin-top:20px;
    
    .gam-blue {
 
-      letter-spacing:15px!important;
-      word-spacing: -2px!important;
+      letter-spacing:-3px!important;
+      word-spacing: 0px!important;
       }
    }
