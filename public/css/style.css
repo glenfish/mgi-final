@@ -68,7 +68,6 @@
    padding-bottom: 10px!important;
    font-weight: 900!important;
    color: #304A73!important;
-   /* letter-spacing:12px!important; */
    }
 
    .garamond {
@@ -194,16 +193,9 @@
       /* text-decoration: underline; */
       line-height: 42px!important;
       text-align:center;
-      letter-spacing:0px!important;
+      /* letter-spacing:-3px!important; */
       }
-      .gam-blue {
-      font-family: 'Prata',  serif!important;
-      font-size: 48px!important;
-      padding-bottom: 10px!important;
-      font-weight: 900!important;
-      color: #304A73!important;
-      letter-spacing: normal;
-      }
+
       .join-americans {
       font-family: 'Prata', serif!important;
       font-size: 1.2rem!important;
@@ -655,8 +647,8 @@ padding: 80px 10px!important;
 
 @media (min-width: 220px) and (max-width: 530px) {
 .mobile {
-font-size: 30px!important;
-font-family: 'Prata', serif!important;
+/* font-size: 30px!important;
+font-family: 'Prata', serif!important; */
 /* letter-spacing:-2px!important; */
 }
 .ap-SJNso-d4s4 {
@@ -668,7 +660,7 @@ padding: 4px 0px!important;
 font-family: 'Prata',  serif!important;
 font-size: 32px!important;
 padding-bottom: 10px!important;
-letter-spacing:1px!important;
+letter-spacing:-1px!important;
 word-spacing: 2px!important;
 }
 
@@ -683,11 +675,11 @@ word-spacing: 2px!important;
       /* max-width:550px!important; */
    }
 }
-@media  (min-width: 482px) and (max-width: 1252px)  { 
+@media  (min-width: 810px) and (max-width: 1252px)  { 
    #formContainer {
       min-width:620px!important;
       position:relative;
-      top: -90px;
+      top: -50px;
    }
 }
 
@@ -697,11 +689,13 @@ word-spacing: 2px!important;
       top: -40px;
       
    }
+
  }
- @media  (min-width: 480px) and (max-width:530px) { 
+ @media  (min-width: 1px) and (max-width:645px) { 
+
    .gam-blue {
-      font-size: 2.8rem!important;
-      /* letter-spacing: 3px!important; */
+      font-size: 2.0rem!important;
+      letter-spacing: 0px!important;
    }
  }
  @media (max-width:479px) { 
@@ -710,23 +704,9 @@ word-spacing: 2px!important;
       top: -100px;
       margin-top: 0!important;
    }
-   .gam-blue {
-      font-size: 2.2rem!important;
-      /* letter-spacing: 3px!important; */
-   }
+
  }
- @media (max-width:385px) { 
-   .gam-blue {
-      font-size: 1.8rem!important;
-      /* letter-spacing: 3px!important; */
-   }
- }
- @media (max-width:302px) { 
-   .gam-blue {
-      font-size: 2rem!important;
-      
-   }
- }
+
  @media (max-width:1040px) { 
    #vidContainer {
       text-align: center;
@@ -931,14 +911,3 @@ margin-top:20px;
       background-image:url(/images/beach-sm.jpg);overflow:hidden;
    }
 }
-
-
-@media only screen and (max-width:500px) and (-webkit-device-pixel-ratio: 2) {
-   
-   .gam-blue {
-
-      letter-spacing:10px!important;
-      word-spacing: 4px!important;
-      font-size: 30px!important;
-      }
-   }
