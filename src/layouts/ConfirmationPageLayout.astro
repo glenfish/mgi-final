@@ -24,22 +24,12 @@ import Tracking from '../components/Tracking.astro';
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="/css/style.css">
 		<link rel="stylesheet" href="/css/tailwind.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-		<!-- Google Tag Manager -->
-			<script client:load>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-TMW6WRX');</script>
-	
-		<!-- Google tag (gtag.js) --> <script client:load async src="https://www.googletagmanager.com/gtag/js?id=AW-11045486271"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11045486271'); </script>
-	
-		<!-- End Google Tag Manager -->	
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
 		
 		<title>MyGoldIRA</title>
 	</head>
 	<body onload='getParams();'>
-		<Tracking />
+		<!-- <Tracking /> -->
 		<slot />
 		<script client:load src="/js/confirm.js"></script>
 		<script client:load src="/js/jsfooter.js"></script>
@@ -50,10 +40,5 @@ html { font-size: calc(0.625rem + 0.41666666666666663vw); }
 @media screen and (max-width:1920px) { html { font-size: calc(0.625rem + 0.41666666666666674vw); } }
 @media screen and (max-width:1440px) { html { font-size: calc(0.8126951092611863rem + 0.20811654526534862vw); } }
 @media screen and (max-width:479px) { html { font-size: calc(0.7494769874476988rem + 0.8368200836820083vw); } }
-@font-face {
-font-family: 'Cormorant Garamond Italic';
-font-style: normal;
-font-weight: normal;
-src: local('Cormorant Garamond Italic'), url('/css/CormorantGaramond-Italic.woff') format('woff');
-}
+
 </style>
