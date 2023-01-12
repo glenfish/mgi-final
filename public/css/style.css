@@ -202,6 +202,7 @@
       padding-bottom: 10px!important;
       font-weight: 900!important;
       color: #304A73!important;
+      letter-spacing: normal;
       }
       .join-americans {
       font-family: 'Prata', serif!important;
@@ -936,7 +937,8 @@ margin-top:20px;
    
    .gam-blue {
 
-      letter-spacing:-3px!important;
-      word-spacing: 0px!important;
+      letter-spacing:10px!important;
+      word-spacing: 4px!important;
+      font-size: 30px!important;
       }
    }
