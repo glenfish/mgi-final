@@ -628,18 +628,12 @@ font-family: serif;}
 .ap-rJM7M8dNsV {
 border-radius: 100px!important;
 }
-@media (min-width: 220px) and (max-width: 530px) {
-.ap-rJM7M8dNsV {
-}
-}
+
 
 .ap-H17mM8_VoN {
 border-radius: 0px!important;
 }
-@media (min-width: 220px) and (max-width: 530px) {
-.ap-H17mM8_VoN {
-}
-}
+
 
 @import url(https://d1zviajkun9gxg.cloudfront.net/content/vendor/fontawesome-6/css/all.min.css);
 
@@ -647,20 +641,14 @@ border-radius: 0px!important;
 .ap-S1fsjWOVoV {
 padding-bottom: 50px!important;
 }
-@media (min-width: 220px) and (max-width: 530px) {
-.ap-S1fsjWOVoV {
-}
-}
+
 
 .ap-SJNso-d4s4 {
 border-radius: 0px!important;
 padding: 80px 10px!important;
 --spacing-bottom: 24px;
 }
-@media (min-width: 220px) and (max-width: 530px) {
-.ap-SJNso-d4s4 {
-}
-}
+
 
 
 @media (min-width: 220px) and (max-width: 530px) {
@@ -682,12 +670,8 @@ letter-spacing:-1px!important;
 word-spacing: 2px!important;
 }
 .gam-blue {
-font-family: 'Prata',  serif;
-font-size: 40px!important;
-padding-bottom: 10px!important;
-font-weight: 900!important;
-color: #304A73!important;
-text-align: center;
+   font-size: 3rem!important;
+   letter-spacing: 2px!important;
 }
 .join-americans {
    font-family: 'Prata', serif!important;
@@ -719,8 +703,20 @@ text-align: center;
       top: -70px; */
    }
    .gam-blue {
-      font-size: 2.3rem!important;
-      letter-spacing: -1px;
+      font-size: 2.5rem!important;
+      letter-spacing: 2px!important;
+   }
+ }
+ @media (max-width:385px) { 
+   .gam-blue {
+      font-size: 2.125rem!important;
+      letter-spacing: 2px!important;
+   }
+ }
+ @media (max-width:302px) { 
+   .gam-blue {
+      font-size: 2rem!important;
+      letter-spacing: 4px!important;
    }
  }
  @media (max-width:1040px) { 
