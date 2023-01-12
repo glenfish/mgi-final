@@ -127,13 +127,13 @@
       max-width: 100vw!important;
       }
       #formContainer {
-         max-width:500px;
+         max-width:550px;
          width: 100%!important;
       position:relative;
-      top: -30px;
+      top: -70px;
       border-radius: 30px;
       border-color: var(--bordercolor);
-      padding: 25px;
+      padding: 32px;
       margin:0px auto;
       background-image: linear-gradient(to top, rgba(255,255,255,0.4), rgb(255, 255, 255));
       }
@@ -671,23 +671,21 @@ word-spacing: 2px!important;
    text-align:center;
    }
 }
-@media  (min-width: 1250px)  { 
+
+@media  (min-width: 810px) and (max-width: 1250px)  { 
    #formContainer {
-      /* max-width:550px!important; */
-   }
-}
-@media  (min-width: 810px) and (max-width: 1252px)  { 
-   #formContainer {
-      min-width:620px!important;
+      width:660px!important;
       position:relative;
-      top: -50px;
+      top: -80px;
    }
 }
 
-@media  (min-width: 480px) and (max-width:645px) { 
+@media  (max-width:809px) { 
    #formContainer {
-      position:relative;
-      top: -40px;
+      position:relative!important;
+      top: -100px!important;
+      /* width:480px!important; */
+      width:100%!important;
       
    }
 
@@ -699,14 +697,7 @@ word-spacing: 2px!important;
       letter-spacing: -2px!important;
    }
  }
- @media (max-width:479px) { 
-   #formContainer {
-      position:relative;
-      top: -100px;
-      margin-top: 0!important;
-   }
 
- }
 
  @media (max-width:1040px) { 
    #vidContainer {
@@ -799,7 +790,7 @@ background-image: linear-gradient(to top, rgba(255,255,255,0.6), rgb(255, 255, 2
 top: 20px; */
    }
 }
-@media (max-width:1261px) { 
+@media (max-width:1267px) { 
 #mgi-logo {
    justify-content:center;
    padding-left: 0!important;
