@@ -901,6 +901,14 @@ margin-top:20px;
    
    }
 
+   @media  (max-width:480px) { 
+      .break-usdollarinflation {
+         display:inline!important;
+      
+      }
+      
+      }
+
 #myForm {
    padding: 0 10px ;
 }
