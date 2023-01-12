@@ -711,13 +711,13 @@ word-spacing: 2px!important;
       margin-top: 0!important;
    }
    .gam-blue {
-      font-size: 2.5rem!important;
+      font-size: 2.2rem!important;
       /* letter-spacing: 3px!important; */
    }
  }
  @media (max-width:385px) { 
    .gam-blue {
-      font-size: 2.125rem!important;
+      font-size: 1.8rem!important;
       /* letter-spacing: 3px!important; */
    }
  }
