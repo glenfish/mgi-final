@@ -68,6 +68,7 @@
    padding-bottom: 10px!important;
    font-weight: 900!important;
    color: #304A73!important;
+   letter-spacing:2px;
    }
 
    .garamond {
@@ -704,19 +705,19 @@ word-spacing: 2px!important;
    }
    .gam-blue {
       font-size: 2.2rem!important;
-      letter-spacing: 2px!important;
+      letter-spacing: 3px!important;
    }
  }
  @media (max-width:385px) { 
    .gam-blue {
       font-size: 2.125rem!important;
-      letter-spacing: 2px!important;
+      letter-spacing: 3px!important;
    }
  }
  @media (max-width:302px) { 
    .gam-blue {
       font-size: 2rem!important;
-      letter-spacing: 2px!important;
+      letter-spacing: 3px!important;
    }
  }
  @media (max-width:1040px) { 
