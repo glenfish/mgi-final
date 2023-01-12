@@ -699,8 +699,9 @@ word-spacing: 2px!important;
  }
  @media (max-width:479px) { 
    #formContainer {
-      /* position:relative;
-      top: -70px; */
+      position:relative;
+      top: -100px;
+      margin-top: 0!important;
    }
    .gam-blue {
       font-size: 2.2rem!important;
