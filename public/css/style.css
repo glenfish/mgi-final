@@ -68,7 +68,7 @@
    padding-bottom: 10px!important;
    font-weight: 900!important;
    color: #304A73!important;
-   letter-spacing:2px;
+   letter-spacing:12px!important;
    }
 
    .garamond {
@@ -697,6 +697,12 @@ word-spacing: 2px!important;
       
    }
  }
+ @media  (min-width: 480px) and (max-width:530px) { 
+   .gam-blue {
+      font-size: 2.8rem!important;
+      letter-spacing: 3px!important;
+   }
+ }
  @media (max-width:479px) { 
    #formContainer {
       position:relative;
@@ -704,7 +710,7 @@ word-spacing: 2px!important;
       margin-top: 0!important;
    }
    .gam-blue {
-      font-size: 2.2rem!important;
+      font-size: 2.5rem!important;
       letter-spacing: 3px!important;
    }
  }
@@ -717,7 +723,7 @@ word-spacing: 2px!important;
  @media (max-width:302px) { 
    .gam-blue {
       font-size: 2rem!important;
-      letter-spacing: 3px!important;
+      
    }
  }
  @media (max-width:1040px) { 
@@ -926,11 +932,11 @@ margin-top:20px;
 }
 
 
-@media only screen and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (max-width:500px) and (-webkit-device-pixel-ratio: 2) {
    
    .gam-blue {
 
-      letter-spacing:-5px!important;
+      letter-spacing:15px!important;
       word-spacing: -2px!important;
       }
    }
