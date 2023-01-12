@@ -666,7 +666,7 @@ padding: 4px 0px!important;
 font-family: 'Prata',  serif!important;
 font-size: 32px!important;
 padding-bottom: 10px!important;
-letter-spacing:-1px!important;
+letter-spacing:1px!important;
 word-spacing: 2px!important;
 }
 .gam-blue {
@@ -926,3 +926,15 @@ margin-top:20px;
       background-image:url(/images/beach-sm.jpg);overflow:hidden;
    }
 }
+
+
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+   
+   .headline {
+      font-family: 'Prata',  serif!important;
+      font-size: 32px!important;
+      padding-bottom: 10px!important;
+      letter-spacing:-2px!important;
+      word-spacing: 2px!important;
+      }
+   }
