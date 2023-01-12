@@ -690,13 +690,21 @@ word-spacing: 2px!important;
    }
 
  }
- @media  (min-width: 1px) and (max-width:645px) { 
+ @media  (min-width: 437px) and (max-width:555px) { 
+
+   .gam-blue {
+      font-size: 2.5rem!important;
+      letter-spacing: -2px!important;
+   }
+ }
+ @media  (min-width: 1px) and (max-width:436px) { 
 
    .gam-blue {
       font-size: 2.0rem!important;
       letter-spacing: -2px!important;
    }
  }
+
 
 
  @media (max-width:1040px) { 
