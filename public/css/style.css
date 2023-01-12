@@ -54,7 +54,7 @@
    background-color: transparent!important;
    outline: none;
    border-bottom: 1px solid gray;
-   min-width: 300px;
+   /* min-width: 300px; */
    font-size: 1.2rem!important;
    }
    input[type=checkbox] {
@@ -176,7 +176,7 @@
       background-color: transparent!important;
       outline: none;
       border-bottom: 1px solid gray;
-      min-width: 300px;
+      /* min-width: 300px; */
       font-size: 1.2rem!important;
       }
       input[type=checkbox] {
@@ -910,6 +910,17 @@ margin-top:20px;
       }
 
 #myForm {
-   padding: 0 10px ;
+   padding: 0 5px ;
 }
 
+
+@media  (min-width:811px) { 
+   .layout-media-image {
+      background-image:url(/images/beach-med.jpg);overflow:hidden;
+   }
+}
+@media  (max-width:810px) { 
+   .layout-media-image {
+      background-image:url(/images/beach-sm.jpg);overflow:hidden;
+   }
+}
