@@ -935,10 +935,58 @@ margin-top:20px;
 
    .gam-blue { letter-spacing: -1px!important; }
  }
-
+ /* iPhone 13 mini */
+ /* 2340x1080 pixels at 476ppi */
  @media only screen 
     and (device-width: 375px) 
     and (device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) { 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) { 
       .gam-blue { letter-spacing: -3px!important; }
     }
+
+
+    /* iPhone 13 and iPhone 13 Pro */
+    /* 2532x1170 pixels at 460ppi */
+    @media only screen 
+        and (device-width: 390px) 
+        and (device-height: 844px) 
+        and (-webkit-device-pixel-ratio: 3) 
+        and (orientation: portrait) 
+        {.gam-blue { letter-spacing: -3px!important; } }
+
+        /* iPhone 13 Pro Max */
+/* 2778x1284 pixels at 458ppi */
+@media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) 
+    {.gam-blue { letter-spacing: -3px!important; } }
+
+    /* Older iPhones (X, Xs, XR and 11) */
+/* 1792x828px at 326ppi */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) 
+    {.gam-blue { letter-spacing: -3px!important; } }
+
+    /* iPhone 11 Pro */
+/* 2436x1125px at 458ppi */
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) 
+    {.gam-blue { letter-spacing: -3px!important; } }
+
+    /* iPhone 11 Pro Max */
+/* 2688x1242px at 458ppi */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) 
+    and (orientation: portrait) 
+    {.gam-blue { letter-spacing: -3px!important; } }
