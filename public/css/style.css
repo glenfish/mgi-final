@@ -931,7 +931,7 @@ margin-top:20px;
    }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width:400px) {
+@media only screen and (max-width:400px) {
 
-   .gam-blue { letter-spacing: -2px!important; }
+   .gam-blue { letter-spacing: -1px!important; }
  }
