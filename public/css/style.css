@@ -672,11 +672,11 @@ word-spacing: 2px!important;
    }
 }
 
-@media  (min-width: 810px) and (max-width: 1250px)  { 
+@media  (min-width: 810px) and (max-width: 1267px)  { 
    #formContainer {
       width:660px!important;
       position:relative;
-      top: -80px;
+      top: -90px;
    }
 }
 
@@ -775,10 +775,12 @@ word-spacing: 2px!important;
 }
 
 #watch-this {
-   position:relative;
-   top:3px;
-   left:10px;
-   width: 280px!important;
+   /* position:relative;
+   top:8px; */
+   /* left:160px; */
+   margin: 5px auto;
+   width: 300px!important;
+   /* width: 180px!important; */
 
 }
 
@@ -916,5 +918,15 @@ margin-top:20px;
 @media  (max-width:810px) { 
    .layout-media-image {
       background-image:url(/images/beach-sm.jpg);overflow:hidden;
+   }
+}
+
+.footer-links {
+   padding: 0 3%;
+}
+@media  (max-width:400px) { 
+   .footer-links {
+      padding: 0 4px;
+      font-size: 12px;
    }
 }
