@@ -68,7 +68,7 @@
    padding-bottom: 10px!important;
    font-weight: 900!important;
    color: #304A73!important;
-   letter-spacing: -2px;
+   letter-spacing: -1px;
    }
 
    .garamond {
@@ -694,14 +694,14 @@ word-spacing: 2px!important;
 
    .gam-blue {
       font-size: 2.2rem!important;
-      letter-spacing: -2px!important;
+      letter-spacing: -1px!important;
    }
  }
  @media  (min-width: 437px) and (max-width:555px) { 
 
    .gam-blue {
       font-size: 2.0rem!important;
-      letter-spacing: -2px!important;
+      letter-spacing: -1px!important;
    }
  }
  @media  (min-width: 1px) and (max-width:436px) { 
@@ -930,3 +930,8 @@ margin-top:20px;
       font-size: 12px;
    }
 }
+
+@supports (-webkit-touch-callout: none) {
+   /* CSS specific to iOS devices */ 
+   .gam-blue { letter-spacing: -3px!important; }
+ }
