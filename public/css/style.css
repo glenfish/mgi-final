@@ -87,8 +87,8 @@
    border: 2px solid rgb(217, 170, 30)!important;
    /* box-shadow: white 0px 0px 30px 30px; */
    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px!important; */
-   box-shadow: rgba(233, 206, 70, 0.4) 0px 0px 10px 3px!important;
-   letter-spacing: 2px;
+   /* box-shadow: rgba(233, 206, 70, 0.4) 0px 0px 10px 3px!important; */
+   letter-spacing: 0px;
    margin: 0 auto;
    }
    .submit-button:hover {
@@ -223,8 +223,8 @@
       border: 2px solid rgb(217, 170, 30)!important;
       /* box-shadow: white 0px 0px 30px 30px; */
       /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px!important; */
-      box-shadow: rgba(233, 206, 70, 0.4) 0px 0px 10px 3px!important;
-      letter-spacing: 2px;
+      /* box-shadow: rgba(233, 206, 70, 0.4) 0px 0px 10px 3px!important; */
+      letter-spacing: 0px;
       margin: 0 auto;
       }
       .submit-button:hover {
@@ -233,7 +233,7 @@
       background-color: rgba(244, 196, 50, 1)!important;
       color: #092f6d!important;
       border: 1px solid white!important;
-      box-shadow: rgba(134, 134, 134, 0.3) 0px 0px 20px 4px!important;
+      /* box-shadow: rgba(134, 134, 134, 0.3) 0px 0px 20px 4px!important; */
       }
       .r100vw {
       max-width: 3440px!important;
