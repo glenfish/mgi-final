@@ -931,10 +931,7 @@ margin-top:20px;
    }
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-   /* CSS specific to iOS devices */ 
-   .gam-blue { letter-spacing: -4px!important; }
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+
+   .gam-blue { letter-spacing: -2px!important; }
  }
