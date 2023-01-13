@@ -938,8 +938,8 @@ margin-top:20px;
  /* iPhone 13 mini */
  /* 2340x1080 pixels at 476ppi */
  @media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
+    and (width: 375px) 
+    and (height: 812px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) { 
       .gam-blue { letter-spacing: -3px!important;
@@ -950,8 +950,8 @@ margin-top:20px;
     /* iPhone 13 and iPhone 13 Pro */
     /* 2532x1170 pixels at 460ppi */
     @media only screen 
-        and (device-width: 390px) 
-        and (device-height: 844px) 
+        and (width: 390px) 
+        and (height: 844px) 
         and (-webkit-device-pixel-ratio: 3) 
         and (orientation: portrait) 
         {.gam-blue { letter-spacing: -3px!important; font-size: 2.0rem!important;} }
@@ -959,8 +959,8 @@ margin-top:20px;
         /* iPhone 13 Pro Max */
 /* 2778x1284 pixels at 458ppi */
 @media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px) 
+    and (width: 428px) 
+    and (height: 926px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) 
     {.gam-blue { letter-spacing: -3px!important; font-size: 2.0rem!important;} }
@@ -968,8 +968,8 @@ margin-top:20px;
     /* Older iPhones (X, Xs, XR and 11) */
 /* 1792x828px at 326ppi */
 @media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
+    and (width: 414px) 
+    and (height: 896px) 
     and (-webkit-device-pixel-ratio: 2) 
     and (orientation: portrait) 
     {.gam-blue { letter-spacing: -3px!important; font-size: 2.0rem!important;} }
@@ -977,8 +977,8 @@ margin-top:20px;
     /* iPhone 11 Pro */
 /* 2436x1125px at 458ppi */
 @media only screen 
-    and (device-width: 375px) 
-    and (device-height: 812px) 
+    and (width: 375px) 
+    and (height: 812px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) 
     {.gam-blue { letter-spacing: -3px!important; font-size: 2.0rem!important;} }
@@ -986,8 +986,15 @@ margin-top:20px;
     /* iPhone 11 Pro Max */
 /* 2688x1242px at 458ppi */
 @media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
+    and (width: 414px) 
+    and (height: 896px) 
     and (-webkit-device-pixel-ratio: 3) 
     and (orientation: portrait) 
     {.gam-blue { letter-spacing: -3px!important; font-size: 2.0rem!important;} }
+
+    /* iPhone 6,7,8 */
+@media only screen
+and (max-device-width: 640px),
+only screen and (max-device-width: 667px),
+only screen and (max-width: 480px)
+{.gam-blue { letter-spacing: -3px!important; font-size: 2.0rem!important;}  }
