@@ -889,7 +889,7 @@ margin-top:20px;
 
 }
 
-@media  (max-width:457px) { 
+@media  (max-width:768px) { 
    .break-subheadline {
       display:inline!important;
    
