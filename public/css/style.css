@@ -130,7 +130,7 @@
          max-width:550px;
          width: 100%!important;
       position:relative;
-      top: -70px;
+      top: -90px;
       border-radius: 30px;
       border-color: var(--bordercolor);
       padding: 32px;
@@ -676,7 +676,7 @@ word-spacing: 2px!important;
    #formContainer {
       width:660px!important;
       position:relative;
-      top: -90px;
+      top: -110px;
    }
 }
 
