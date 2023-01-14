@@ -1083,14 +1083,14 @@ margin-top:20px;
  }
 
  #subsub-headline{
-   font-family:  'SF Pro', 'Gill Sans Bold', 'Futura Condensed Extra Bold', 'Lato', 'Proxima Nova', 'Open Sans', 'Montserrat', 'Roboto', Arial Bold, Tahoma, Arial Bold!important;
+   font-family:  'HelveticaNeue-Bold', 'SF Pro', 'Gill Sans Bold', 'Futura Condensed Extra Bold', 'Lato', 'Verdana-Bold', 'Proxima Nova', 'Open Sans', 'Montserrat', 'Roboto', Arial Bold, Tahoma, Arial Bold!important;
    font-size: 30px!important;
    text-align:center;
    padding-bottom: 10px;
    line-height: 28px;
 }
 h2.headline{
-   font-family:  'SF Pro', 'Gill Sans Bold', 'Futura Condensed Extra Bold',  'Lato', 'Proxima Nova', 'Open Sans', 'Montserrat', 'Roboto', Arial Bold, Tahoma, Arial Bold!important;
+   font-family:  'HelveticaNeue-Bold', 'SF Pro', 'Gill Sans Bold', 'Futura Condensed Extra Bold',  'Lato', 'Verdana-Bold', 'Proxima Nova', 'Open Sans', 'Montserrat', 'Roboto', Arial Bold, Tahoma, Arial Bold!important;
    font-weight:800;
    text-transform:uppercase;
    line-height: 28px;
