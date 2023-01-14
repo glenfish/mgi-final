@@ -8,6 +8,8 @@ export interface Props {
 import Head from '../components/Head.astro';
 import Tracking from '../components/Tracking.astro';
 import MetaDataSEO from '../components/MetaDataSEO.astro';
+
+
 ---
 
 <!DOCTYPE html>
@@ -29,8 +31,9 @@ import MetaDataSEO from '../components/MetaDataSEO.astro';
 	<body onload='getParams();'>
 		<!-- <Tracking /> -->
 		<slot />
-		<script client:load src="/js/form.js"></script>
-		<script client:load src="/js/jsfooter.js"></script>
+		<script client:load src="/js/jsfooter.js" defer></script>
+		<script client:load src="/js/form.js" defer></script>
+		<script client:load src="/js/wistiaload.js" defer></script>
 	</body>
 </html>
 <style is:global>
