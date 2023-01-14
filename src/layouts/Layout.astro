@@ -31,9 +31,52 @@ import MetaDataSEO from '../components/MetaDataSEO.astro';
 	<body onload='getParams();'>
 		<!-- <Tracking /> -->
 		<slot />
-		<script client:load src="/js/jsfooter.js" defer></script>
-		<script client:load src="/js/form.js" defer></script>
-		<script client:load src="/js/wistiaload.js" defer></script>
+		<script client:load src="/js/jsfooter.js" ></script>
+		<script client:load src="/js/form.js" ></script>
+		<script client:load>
+		// var loadedStatus = false;
+		// let myCounter = 0;
+		// let videoContent = '';
+		// let videoDummyContent = document.getElementById('wistia-load');
+		// function checkIfVideoIsLoaded() {
+		// 	console.log('running');
+		// 	try {
+		// 	videoContent = document.getElementById('wistia-fa6d412no0-1');
+		// 	console.log(videoContent);
+		// 	} catch {}
+		// 	// console.log(videoContent);
+		// 	if (videoContent !== null) { 
+				
+		// 		console.log('video is loaded!!');
+		// 		return true;
+		// 	} else {
+		// 		return false;
+		// 	}
+    	// }
+		// 	while (!loadedStatus) {
+		// 		try {
+		// 			console.log('calling function');
+		// 			loadedStatus = checkIfVideoIsLoaded();
+		// 		} catch {loadedStatus = false;}
+		// 		if (loadedStatus) {
+		// 			videoDummyContent.classList.add('hide');
+		// 			break;
+		// 		}
+		// 		myCounter += 1;
+		// 		if (myCounter >50000) {
+		// 			break;
+		// 		}
+		// 	}
+			function swapPlaceholder() {
+				
+				
+				document.getElementById('wistia-load').style.display="none";
+				document.getElementById('wistia-video').style.display="block";
+			}
+			setTimeout( swapPlaceholder, 1000);
+
+			
+		</script>
 	</body>
 </html>
 <style is:global>
