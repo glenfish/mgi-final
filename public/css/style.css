@@ -198,12 +198,7 @@
       text-align:center;
       /* letter-spacing:-3px!important; */
       }
-      #subsub-headline{
-         font-family:    Tahoma, Arial,sans-serif!important;
-         font-size: 26px!important;
-         text-align:center;
-         padding-bottom: 10px;
-      }
+
 
       .join-americans {
       font-family: 'Prata', serif!important;
@@ -1079,3 +1074,10 @@ margin-top:20px;
  .hide {
    display:none;
  }
+
+ #subsub-headline{
+   font-family:    Tahoma, Arial,sans-serif!important;
+   font-size: 26px!important;
+   text-align:center;
+   padding-bottom: 10px;
+}
