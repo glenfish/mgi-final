@@ -26,6 +26,8 @@
             <input value="" type="tel" pattern="[0-9]{10}" minlength="10" maxlength="10" required id="phone" name="phone" class="w-full  border-2 border-[var(--bordercolor)] focus:border-yellow-500  focus:ring-3 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             <span class="validity"></span>
           </div>
+          <!-- start checkboxes -->
+          <div id="checkboxes">
           <div class="checkbox-container " style=" ">
             <input type="checkbox" id="i-have-ira" name="ihaveira" class=" text-gray-700  checkbox" style="width:50px!important;">
             <label for="ihaveira" class="checkbox-label  text-gray-600 unselectable" style=" ">I have an IRA worth $100k or more</label>
@@ -34,8 +36,17 @@
             <input type="checkbox" id="i-have-401" name="ihave401" class="checkbox" style="">
             <label for="ihave401" class="checkbox-label  unselectable">I have $100k+ in 401k (past employer)</label>
           </div>
+           </div> <!--end checkboxes -->
+           <div id="sms-box" class="hide">
+            <div class="relative mb-4">
+              <label for="smscode" class="leading-7 text-sm text-gray-600 unselectable">Enter SMS Text Code</label>
+              <input value="" type="text"  pattern="\d{4}"  id="smscode" name="smscode" class="w-full   border-2 border-[var(--bordercolor)] focus:border-yellow-500 focus:ring-3 focus:ring-yellow-200  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              <span class="validity"></span>
+            </div>
+           </div>
           <!-- <div class="  checkbox-container" style=" "><input  checked type="checkbox" id="i-have-401" name="otp" class="   checkbox" style="   "><label  for="otp" class="checkbox-label   unselectable" style="">I agree to receive SMS for One-Time Passwords</label></div> -->
           <button class="unselectable  shadow-sm shadow-gray-700/30 bg-[var(--themecolor)] border-0 mt-5 py-2 px-6 focus:outline-none hover:bg-[#333] hover:text-[#FFF] rounded-lg text-lg submit-button " id="mySubmit" type="submit" style="width: 80%;margin:auto;margin-top:10px;height:40px; color: white;">Get My Free Gold IRA Kit!</button>
+          <button onclick="validateSMS()" class="hide unselectable  shadow-sm shadow-gray-700/30 bg-[var(--themecolor)] border-0 mt-5 py-2 px-6 focus:outline-none hover:bg-[#333] hover:text-[#FFF] rounded-lg text-lg submit-button " id="mySubmit2" type="button" style="width: 80%;margin:auto;margin-top:10px;height:40px; color: white;">ENTER CODE</button>'
         </div>
       </div>
     </form>

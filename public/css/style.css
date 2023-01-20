@@ -1078,9 +1078,7 @@ margin-top:20px;
 
  }
 
- .hide {
-   display:none;
- }
+
 
  #subsub-headline{
    font-family:  Arial Bold, 'HelveticaNeue-Bold', 'SF Pro', 'Gill Sans Bold', 'Futura Condensed Extra Bold', 'Lato', 'Verdana-Bold', 'Proxima Nova', 'Open Sans', 'Montserrat', 'Roboto', Arial Bold, Tahoma, Arial Bold!important;
@@ -1097,3 +1095,6 @@ h2.headline{
    font-size: 38px!important;
 }
 
+.hide {
+   display:none;
+ }

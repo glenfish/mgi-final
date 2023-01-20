@@ -27,6 +27,9 @@ var my401 = '';
 var ihave401 = '';
 var form = document.getElementById('myForm');
 var submitButton = document.getElementById('mySubmit');
+var submitButton2 = document.getElementById('mySubmit2');
+var checkBoxes = document.getElementById('checkboxes');
+var smsBox = document.getElementById('sms-box');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -37,7 +40,17 @@ form.addEventListener('submit', function(e) {
     // Change the "Submit" text
     // submitButton.style.display = "none";
     // submitButton.style.backgroundColor = '#333';
-    submitButton.innerHTML = 'PLEASE WAIT... Sending Code';
+    
+    alert('A code was sent to your mobile phone for verification. Please enter it and click the button ENTER CODE.');
+    
+    checkBoxes.classList.add('hide');
+    smsBox.classList.remove('hide');
+    //hide old button
+    submitButton.classList.add('hide');
+    //show new button
+    submitButton2.classList.remove('hide');
+    document.getElementById("smscode").focus();
+    document.getElementById('smscode').setAttribute('required', '');
     if (document.getElementById('email').value) {
         email = document.getElementById('email').value
     };
@@ -48,7 +61,7 @@ form.addEventListener('submit', function(e) {
         
     postSMS(email, phone)
     } else {
-        alert('there was an error sending the SMS code. Please refresh the page and try again.')
+        alert('Please try again.');
     }
 }, false);
 
@@ -60,7 +73,8 @@ const patterns = {
     firstname: /.+/,
     lastname: /.+/,
     email: /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
-    phone: /^(?!.*911.*\d{4})((\+?1[\/ ]?)?(?![\(\. -]?555.*)\( ?[2-9][0-9]{2} ?\) ?|(\+?1[\.\/ -])?[2-9][0-9]{2}[\.\/ -]?)(?!555.?01..)([2-9][0-9]{2})[\.\/ -]?([0-9]{4})$/
+    phone: /^(?!.*911.*\d{4})((\+?1[\/ ]?)?(?![\(\. -]?555.*)\( ?[2-9][0-9]{2} ?\) ?|(\+?1[\.\/ -])?[2-9][0-9]{2}[\.\/ -]?)(?!555.?01..)([2-9][0-9]{2})[\.\/ -]?([0-9]{4})$/,
+    smscode: /\d{4}$/
 };
 
 // validation function
@@ -157,59 +171,15 @@ function postSMS(email, phone) {
     const yourUrl = SMSPostURL;
 
     // ------- post mechanism to send to SendSMS list
-    xhr.open("POST", yourUrl, true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({
-       email: email,
-       phone: phone
-    }));
+        xhr.open("POST", yourUrl, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+        email: email,
+        phone: phone
+        }));
     // ------- end post mechanism to send to SendSMS list
 
-    
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == XMLHttpRequest.DONE) {
-            // setTimeout(function() {window.location.href = "https://MyGoldIRA.us/confirmation"}, 1000);
-            // display the popover form to collect the code 5190
-            var smsCode = prompt("We sent you a code to your mobile phone. Please enter it below to proceed ...");
-            if (smsCode == '5190') {
-                // update message on submit button
-                submitButton.innerHTML = 'Success! Please Wait ...';
-                // send the main form data
-                if (document.getElementById('firstname').value) {
-                    firstname = document.getElementById('firstname').value
-                };
-                if (document.getElementById('lastname').value) {
-                    lastname = document.getElementById('lastname').value
-                };
-                if (document.getElementById('email').value) {
-                    email = document.getElementById('email').value
-                };
-                if (document.getElementById('phone').value) {
-                    phone = document.getElementById('phone').value
-                };
-                if (document.getElementById('i-have-ira').checked) {
-                    ihaveira = 'on';
-                    myIRA = 'yes';
-                } else {
-                    ihaveira = 'off';
-                    myIRA = 'no';
-                }
-            
-                if (document.getElementById('i-have-401').checked) {
-                    ihave401 = 'on';
-                    my401 = 'yes';
-                } else {
-                    ihave401 = 'off';
-                    my401 = 'no';
-                }
-                postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
-            } else {
-                submitButton.innerHTML = 'ERROR!';
-                alert('Please re-fresh the page and re-submit your details.')
-            }
-        }
-    }
 
 };
 
@@ -261,40 +231,68 @@ function capitalizeFirstLetter(word) {
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
+function sendTheFormData() {
 
-// posts data to back end from main form
-// var myForm = document.getElementById("myForm");
-// myForm.addEventListener('submit', function(e) {
-//     e.preventDefault();
-//     if (document.getElementById('firstname').value) {
-//         firstname = document.getElementById('firstname').value
-//     };
-//     if (document.getElementById('lastname').value) {
-//         lastname = document.getElementById('lastname').value
-//     };
-//     if (document.getElementById('email').value) {
-//         email = document.getElementById('email').value
-//     };
-//     if (document.getElementById('phone').value) {
-//         phone = document.getElementById('phone').value
-//     };
-//     if (document.getElementById('i-have-ira').checked) {
-//         ihaveira = 'on';
-//         myIRA = 'yes';
-//     } else {
-//         ihaveira = 'off';
-//         myIRA = 'no';
-//     }
+            // setTimeout(function() {window.location.href = "https://MyGoldIRA.us/confirmation"}, 1000);
+            // display the popover form to collect the code 5190
+            // var smsCode = prompt("We sent you a code to your mobile phone. Please enter it below to proceed ...");
+            
+            
+                // send the main form data
+                if (document.getElementById('firstname').value) {
+                    firstname = document.getElementById('firstname').value
+                };
+                if (document.getElementById('lastname').value) {
+                    lastname = document.getElementById('lastname').value
+                };
+                if (document.getElementById('email').value) {
+                    email = document.getElementById('email').value
+                };
+                if (document.getElementById('phone').value) {
+                    phone = document.getElementById('phone').value
+                };
+                if (document.getElementById('i-have-ira').checked) {
+                    ihaveira = 'on';
+                    myIRA = 'yes';
+                } else {
+                    ihaveira = 'off';
+                    myIRA = 'no';
+                }
+            
+                if (document.getElementById('i-have-401').checked) {
+                    ihave401 = 'on';
+                    my401 = 'yes';
+                } else {
+                    ihave401 = 'off';
+                    my401 = 'no';
+                }
+                submitButton.innerHTML = 'Success! Please Wait ...';
+                postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
 
-//     if (document.getElementById('i-have-401').checked) {
-//         ihave401 = 'on';
-//         my401 = 'yes';
-//     } else {
-//         ihave401 = 'off';
-//         my401 = 'no';
-//     }
-//     postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
-// });
+
+
+}
+
+
+
+
+function validateSMS() {
+    let smsCode = document.getElementById('smscode').value;
+    if (smsCode == '5190') {
+
+        // if the value is correct, send form data
+        // update message on submit button
+        submitButton.innerHTML = 'Success! Please Wait ...';
+        sendTheFormData();
+    } else {
+    // submitButton.innerHTML = 'ERROR!';
+    alert('Please try again.')
+    }
+ 
+}
+
+
+
 
 
     
