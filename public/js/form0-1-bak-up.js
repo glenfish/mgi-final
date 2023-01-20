@@ -45,7 +45,7 @@ form.addEventListener('submit', function(e) {
         phone = document.getElementById('phone').value
     };
     if (email && phone) {
-        submitButton.innerHTML = 'Success! Please Wait ...';
+        
     postSMS(email, phone)
     } else {
         alert('there was an error sending the SMS code. Please refresh the page and try again.')
@@ -173,6 +173,8 @@ function postSMS(email, phone) {
             // display the popover form to collect the code 5190
             var smsCode = prompt("We sent you a code to your mobile phone. Please enter it below to proceed ...");
             if (smsCode == '5190') {
+                // update message on submit button
+                submitButton.innerHTML = 'Success! Please Wait ...';
                 // send the main form data
                 if (document.getElementById('firstname').value) {
                     firstname = document.getElementById('firstname').value
