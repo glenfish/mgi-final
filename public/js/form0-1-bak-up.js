@@ -45,6 +45,7 @@ form.addEventListener('submit', function(e) {
         phone = document.getElementById('phone').value
     };
     if (email && phone) {
+        submitButton.innerHTML = 'Success! Please Wait ...';
     postSMS(email, phone)
     } else {
         alert('there was an error sending the SMS code. Please refresh the page and try again.')
@@ -211,8 +212,8 @@ function postSMS(email, phone) {
 
     function postToForm(firstname, lastname, email, phone, leadSource, myIRA, my401) {
         // set url params for thankyou page
-        // var thankyouPage = 'https://mygoldira.us/confirmation/';
-        var thankyouPage = 'https://mygoldira.netlify.app/confirmation/';
+        var thankyouPage = 'https://mygoldira.us/confirmation/';
+        // var thankyouPage = 'https://mygoldira.netlify.app/confirmation/';
         var thankyouPageLink = thankyouPage + '?ls=' + leadSource + '&firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&phone=' + phone + '&myIRA=' + myIRA + '&my401=' + my401;
         // send data to form handler
         var xhr = new XMLHttpRequest();

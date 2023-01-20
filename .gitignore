@@ -20,3 +20,4 @@ pnpm-debug.log*
 .DS_Store
 src/pages/page-template.astro
 src/components/Card.astro
+public/js/form0-1-bak-up.js
