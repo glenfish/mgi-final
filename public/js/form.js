@@ -1,10 +1,10 @@
 // USAGE - uncomment the URL required below:
 
 // posts to Form-Data APMGoldIRA list
-// const formPostURL = 'https://api.form-data.com/f/6n9bwus4a5vhsex03mjym';
+const formPostURL = 'https://api.form-data.com/f/6n9bwus4a5vhsex03mjym';
 
 // posts to SendSMS list
-// const formPostURL = 'https://api.form-data.com/f/1pd5lep14spq6wv9gewxks';
+const SMSPostURL = 'https://api.form-data.com/f/1pd5lep14spq6wv9gewxks';
 
 // Zapier webhook
 // const formPostURL = 'https://hooks.zapier.com/hooks/catch/13179157/bp9o3fl/';
@@ -13,7 +13,7 @@
 // const formPostURL = 'https://api.form-data.com/f/a5pbtwu6tt501nmfgff5o3g';
 
 // posts to HeadlessForms
-const formPostURL = 'https://app.headlessforms.cloud/api/v1/form-submission/OLFfTrwhT1';
+// const formPostURL = 'https://app.headlessforms.cloud/api/v1/form-submission/OLFfTrwhT1';
 
 
 var firstname = '';
@@ -28,7 +28,8 @@ var ihave401 = '';
 var form = document.getElementById('myForm');
 var submitButton = document.getElementById('mySubmit');
 
-form.addEventListener('submit', function() {
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
 
     // Disable the submit button
     submitButton.setAttribute('disabled', 'disabled');
@@ -36,8 +37,18 @@ form.addEventListener('submit', function() {
     // Change the "Submit" text
     // submitButton.style.display = "none";
     // submitButton.style.backgroundColor = '#333';
-    submitButton.innerHTML = 'Please wait ...';
-
+    submitButton.innerHTML = 'Sending Code';
+    if (document.getElementById('email').value) {
+        email = document.getElementById('email').value
+    };
+    if (document.getElementById('phone').value) {
+        phone = document.getElementById('phone').value
+    };
+    if (email && phone) {
+    postSMS(email, phone)
+    } else {
+        alert('there was an error sending the SMS code. Please refresh the page and try again.')
+    }
 }, false);
 
 //Validation script here
@@ -55,6 +66,7 @@ const patterns = {
 function validate(field, regex) {
     if (regex.test(field.value)) {
         field.classList.add('valid');
+        field.classList.remove('invalid');
         return true;
     } else {
         field.classList.add('invalid');
@@ -138,10 +150,69 @@ function getParams() {
 
     }
 }
+function postSMS(email, phone) {
+    
+    var xhr = new XMLHttpRequest();
+    const yourUrl = SMSPostURL;
+
+    // ------- post mechanism to send to SendSMS list
+    xhr.open("POST", yourUrl, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+       email: email,
+       phone: phone
+    }));
+    // ------- end post mechanism to send to SendSMS list
+
+    
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            // setTimeout(function() {window.location.href = "https://MyGoldIRA.us/confirmation"}, 1000);
+            // display the popover form to collect the code 5190
+            var smsCode = prompt("Please enter your SMS code");
+            if (smsCode == '5190') {
+                // send the main form data
+                if (document.getElementById('firstname').value) {
+                    firstname = document.getElementById('firstname').value
+                };
+                if (document.getElementById('lastname').value) {
+                    lastname = document.getElementById('lastname').value
+                };
+                if (document.getElementById('email').value) {
+                    email = document.getElementById('email').value
+                };
+                if (document.getElementById('phone').value) {
+                    phone = document.getElementById('phone').value
+                };
+                if (document.getElementById('i-have-ira').checked) {
+                    ihaveira = 'on';
+                    myIRA = 'yes';
+                } else {
+                    ihaveira = 'off';
+                    myIRA = 'no';
+                }
+            
+                if (document.getElementById('i-have-401').checked) {
+                    ihave401 = 'on';
+                    my401 = 'yes';
+                } else {
+                    ihave401 = 'off';
+                    my401 = 'no';
+                }
+                postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
+            } else {
+                alert('Please re-fresh the page and re-submit your details.')
+            }
+        }
+    }
+
+};
 
     function postToForm(firstname, lastname, email, phone, leadSource, myIRA, my401) {
         // set url params for thankyou page
-        var thankyouPage = 'https://mygoldira.us/confirmation/';
+        // var thankyouPage = 'https://mygoldira.us/confirmation/';
+        var thankyouPage = 'https://mygoldira.netlify.app/confirmation/';
         var thankyouPageLink = thankyouPage + '?ls=' + leadSource + '&firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&phone=' + phone + '&myIRA=' + myIRA + '&my401=' + my401;
         // send data to form handler
         var xhr = new XMLHttpRequest();
@@ -157,6 +228,7 @@ function getParams() {
         // ------- end post mechanism to send to SendSMS list
 
         // ------- post mechanism to send to APMGoldIRA list
+
         xhr.open("POST", yourUrl, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify({
@@ -186,39 +258,39 @@ function capitalizeFirstLetter(word) {
 }
 
 
+// posts data to back end from main form
+// var myForm = document.getElementById("myForm");
+// myForm.addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     if (document.getElementById('firstname').value) {
+//         firstname = document.getElementById('firstname').value
+//     };
+//     if (document.getElementById('lastname').value) {
+//         lastname = document.getElementById('lastname').value
+//     };
+//     if (document.getElementById('email').value) {
+//         email = document.getElementById('email').value
+//     };
+//     if (document.getElementById('phone').value) {
+//         phone = document.getElementById('phone').value
+//     };
+//     if (document.getElementById('i-have-ira').checked) {
+//         ihaveira = 'on';
+//         myIRA = 'yes';
+//     } else {
+//         ihaveira = 'off';
+//         myIRA = 'no';
+//     }
 
-var myForm = document.getElementById("myForm");
-myForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (document.getElementById('firstname').value) {
-        firstname = document.getElementById('firstname').value
-    };
-    if (document.getElementById('lastname').value) {
-        lastname = document.getElementById('lastname').value
-    };
-    if (document.getElementById('email').value) {
-        email = document.getElementById('email').value
-    };
-    if (document.getElementById('phone').value) {
-        phone = document.getElementById('phone').value
-    };
-    if (document.getElementById('i-have-ira').checked) {
-        ihaveira = 'on';
-        myIRA = 'yes';
-    } else {
-        ihaveira = 'off';
-        myIRA = 'no';
-    }
-
-    if (document.getElementById('i-have-401').checked) {
-        ihave401 = 'on';
-        my401 = 'yes';
-    } else {
-        ihave401 = 'off';
-        my401 = 'no';
-    }
-    postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
-});
+//     if (document.getElementById('i-have-401').checked) {
+//         ihave401 = 'on';
+//         my401 = 'yes';
+//     } else {
+//         ihave401 = 'off';
+//         my401 = 'no';
+//     }
+//     postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
+// });
 
 
     
