@@ -205,6 +205,7 @@ function postSMS(email, phone) {
                 }
                 postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
             } else {
+                submitButton.innerHTML = 'ERROR!';
                 alert('Please re-fresh the page and re-submit your details.')
             }
         }
