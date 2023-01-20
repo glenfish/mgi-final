@@ -282,7 +282,7 @@ function validateSMS() {
 
         // if the value is correct, send form data
         // update message on submit button
-        submitButton.innerHTML = 'Success! Please Wait ...';
+        submitButton2.innerHTML = 'Success! Please Wait ...';
         sendTheFormData();
     } else {
     // submitButton.innerHTML = 'ERROR!';
