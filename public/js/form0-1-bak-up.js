@@ -37,7 +37,7 @@ form.addEventListener('submit', function(e) {
     // Change the "Submit" text
     // submitButton.style.display = "none";
     // submitButton.style.backgroundColor = '#333';
-    submitButton.innerHTML = 'Sending Code';
+    submitButton.innerHTML = 'PLEASE WAIT... Sending Code';
     if (document.getElementById('email').value) {
         email = document.getElementById('email').value
     };
