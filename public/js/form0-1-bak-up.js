@@ -266,7 +266,7 @@ function sendTheFormData() {
                     ihave401 = 'off';
                     my401 = 'no';
                 }
-                submitButton.innerHTML = 'Success! Please Wait ...';
+                submitButton.innerHTML = 'Success!';
                 postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
 
 
@@ -282,7 +282,7 @@ function validateSMS() {
 
         // if the value is correct, send form data
         // update message on submit button
-        submitButton2.innerHTML = 'Success! Please Wait ...';
+        submitButton2.innerHTML = 'Success!';
         submitButton2.setAttribute('disabled', 'disabled');
         sendTheFormData();
     } else {
