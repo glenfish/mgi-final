@@ -37,33 +37,36 @@ form.addEventListener('submit', function(e) {
     // Disable the submit button
     submitButton.setAttribute('disabled', 'disabled');
 
-    // Change the "Submit" text
-    // submitButton.style.display = "none";
-    // submitButton.style.backgroundColor = '#333';
-    
-    alert('A code was sent to your mobile phone for verification. Please enter it and click the button ENTER CODE.');
-    
-    checkBoxes.classList.add('hide');
-    smsBox.classList.remove('hide');
-    //hide old button
-    submitButton.classList.add('hide');
-    //show new button
-    submitButton2.classList.remove('hide');
-    document.getElementById("smscode").focus();
-    document.getElementById('smscode').setAttribute('required', '');
-    if (document.getElementById('email').value) {
-        email = document.getElementById('email').value
-    };
-    if (document.getElementById('phone').value) {
-        phone = document.getElementById('phone').value
-    };
-    if (email && phone) {
+    if (document.getElementById('i-have-401').checked || document.getElementById('i-have-ira').checked) 
+    {
+
+        alert('A code was sent to your mobile phone for verification. Please enter it and click the button ENTER CODE.');
         
-    postSMS(email, phone)
+        checkBoxes.classList.add('hide');
+        smsBox.classList.remove('hide');
+        //hide old button
+        submitButton.classList.add('hide');
+        //show new button
+        submitButton2.classList.remove('hide');
+        document.getElementById("smscode").focus();
+        document.getElementById('smscode').setAttribute('required', '');
+        if (document.getElementById('email').value) {
+            email = document.getElementById('email').value
+        };
+        if (document.getElementById('phone').value) {
+            phone = document.getElementById('phone').value
+        };
+        if (email && phone) {
+            
+        postSMS(email, phone)
+        } else {
+            alert('Incorrect code. Please check it and try again.');
+        }
     } else {
-        alert('Please try again.');
+        submitButton.classList.add('hide');
+        alert('We apologize but unfortunately you do not qualify for a Gold IRA at this time.');
     }
-}, false);
+});
 
 //Validation script here
 
@@ -192,14 +195,7 @@ function postSMS(email, phone) {
         var xhr = new XMLHttpRequest();
         const yourUrl = formPostURL;
 
-        // ------- post mechanism to send to SendSMS list
-        // xhr.open("POST", yourUrl, true);
-        // xhr.setRequestHeader('Content-Type', 'application/json');
-        // xhr.send(JSON.stringify({
-        //    email: email,
-        //    phone: phone
-        // }));
-        // ------- end post mechanism to send to SendSMS list
+        
 
         // ------- post mechanism to send to APMGoldIRA list
 
