@@ -183,13 +183,20 @@
 
       .join-americans {
       font-family: 'Prata', serif!important;
-      font-size: 1.2rem!important;
-      padding-bottom: 10px!important;
-      font-weight: 900!important;
+      font-size: 1.125rem!important;
+      padding-bottom: 0px!important;
+      font-weight: 700!important;
       /* color: #ab8445!important; */
       color: #cc8200!important;
       text-align:center;
+      position:relative;
+      top:-10px;
+      width: 100%;
+      
+      text-align: center;
+      margin: auto;
       }
+
       .garamond {
       font-family: 'Prata',  serif!important;
       font-size: 24px!important;
@@ -732,14 +739,14 @@ word-spacing: 2px!important;
  @media (max-width:1040px) { 
    #vidContainer {
       text-align: center;
-      margin-top: 100px!important;
+      margin-top: 120px!important;
       width: auto!important;
       /* position:relative!important;
       top: 40px!important; */
    }
 
    .join-americans {
-      font-size: 1.2rem!important;
+      /* font-size: 1.2rem!important; */
    }
 
  }
@@ -891,6 +898,15 @@ top: 20px; */
    width: 100%!important;
    position:relative;
    top:-10px;
+}
+.join-americans span{
+   margin:auto;
+   text-align:center;
+   width:340px;
+   border-top: 1px solid #cc8200;
+border-bottom: 1px solid #cc8200;
+/* line-height: 48px; */
+padding:4px;
 }
 }
 
