@@ -115,7 +115,8 @@
       border-color: var(--bordercolor);
       padding: 32px;
       margin:0px auto;
-      background-image: linear-gradient(to top, rgba(255,255,255,0.1), rgb(255, 255, 255));
+      /* background-image: linear-gradient(to top, rgba(255,255,255,0.1), rgb(255, 255, 255)); */
+      background-color: rgba(255,255,255,0.4);
       overflow: hidden;
       }
       .vidContainer-bgnd {
@@ -141,12 +142,12 @@
       }
 
       .form-instructions {
-      font-size: 10px!important;
+      font-size: 12px!important;
       padding-left:10px!important;
       padding-right: 0!important;
       position: relative!important;
       top: -1px!important;
-      color: rgb(176, 176, 176)!important;
+      color: #304A73!important;
       }
       label {
       padding-top:0px!important;
@@ -664,7 +665,8 @@ word-spacing: 2px!important;
       border-color: var(--bordercolor);
       padding: 32px;
       margin:0px auto;
-      background-image: linear-gradient(to top, rgba(255,255,255,0.4), rgb(255, 255, 255));
+      /* background-image: linear-gradient(to top, rgba(255,255,255,0.4), rgb(255, 255, 255)); */
+      background-color: rgba(255,255,255,0.4);
       overflow: hidden;
 
    }
@@ -673,11 +675,11 @@ word-spacing: 2px!important;
    #formContainer {
       /* width:620px!important; */
       position:relative;
-      top: -110px;
+      /* top: -110px; */
    }
 }
 
-@media (min-width: 525px) and  (max-width:810px) { 
+@media (min-width: 525px) and  (max-width:1094px) { 
    #formContainer {
       position:relative!important;
       top: -100px!important;
@@ -854,6 +856,7 @@ word-spacing: 2px!important;
    margin: 5px auto;
    width: 300px!important;
    /* width: 180px!important; */
+   float:left;
 
 }
 
@@ -880,7 +883,7 @@ background-image: linear-gradient(to top, rgba(255,255,255,0.6), rgb(255, 255, 2
 top: 20px; */
    }
 }
-@media (max-width:1197px) { 
+@media (max-width:1094px) { 
 #mgi-logo {
    justify-content:center;
    padding-left: 0!important;
