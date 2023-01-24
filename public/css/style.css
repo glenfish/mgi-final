@@ -1098,3 +1098,7 @@ h2.headline{
 .hide {
    display:none;
  }
+
+ .goldtext {
+   color:#cc8200!important;
+ }
