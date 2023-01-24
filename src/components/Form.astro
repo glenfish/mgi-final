@@ -3,25 +3,30 @@
       <!-- <input type="hidden" id="leadSource" name="leadSource" value="mygoldira-us-fb-vid-1"> -->
       <div class="  mt-10  mx-auto flex" style="">
         <div id="formContainer" class=" bg-[var(--formcolor)]   rounded-lg p-4 flex flex-col  relative z-10 shadow-md">
-          <h2 class="headline unselectable">Get Your<br class="break-subheadline" style="display:none;"/>&nbsp;Gold IRA kit</h2>
-          <p class="unselectable" id="subsub-headline">+ FREE specialist consultation</p>
+
+          <div style="position:relative; top:-20px;">
+            <h2 class="tracking-tight bluetext text-center" style="font-size:2rem;">
+              Get Your FREE<br class="break-subheadline" style="display:none;"/>&nbsp;Gold IRA kit
+            </h2>
+            <div class=" text-xl font-bold tracking-tight bluetext text-center">& specialist consultation</div>
+          </div>
           <div class="relative mb-4">
-            <label for="firstname" class="leading-7 text-sm text-gray-600 unselectable">Your First Name</label>
+            <label for="firstname" class="leading-7 text-sm text-gray-600 unselectable">First Name</label>
             <input value="" type="text" pattern="..+" required id="firstname" name="firstname" class="w-full   border-2 border-[var(--bordercolor)] focus:border-yellow-500 focus:ring-3 focus:ring-yellow-200  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             <span class="validity"></span>
           </div>
           <div class="relative mb-4">
-            <label for="lastname" class="leading-7 text-sm text-gray-600 unselectable">Your Last Name</label>
+            <label for="lastname" class="leading-7 text-sm text-gray-600 unselectable">Last Name</label>
             <input value="" type="text" pattern="..+" required id="lastname" name="lastname" class="w-full   border-2 border-[var(--bordercolor)] focus:border-yellow-500 focus:ring-3 focus:ring-yellow-200  text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             <span class="validity"></span>
           </div>
           <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-600 unselectable">Your Email</label>
+            <label for="email" class="leading-7 text-sm text-gray-600 unselectable">Email</label>
             <input value="" type="email" pattern="..+@..+\...+" required id="email" name="email" class="w-full   border-2 border-[var(--bordercolor)] focus:border-yellow-500  focus:ring-3 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             <span class="validity"></span>
           </div>
           <div class="relative mb-4">
-            <label for="phone" class="leading-7 text-sm text-gray-600 unselectable">Your Phone <span class="form-instructions unselectable">(10 digits)</span>
+            <label for="phone" class="leading-7 text-sm text-gray-600 unselectable">Phone <span class="form-instructions unselectable">(10 digits)</span>
             </label>
             <input value="" type="tel" pattern="[0-9]{10}" minlength="10" maxlength="10" required id="phone" name="phone" class="w-full  border-2 border-[var(--bordercolor)] focus:border-yellow-500  focus:ring-3 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             <span class="validity"></span>
@@ -45,7 +50,7 @@
             </div>
            </div>
           <!-- <div class="  checkbox-container" style=" "><input  checked type="checkbox" id="i-have-401" name="otp" class="   checkbox" style="   "><label  for="otp" class="checkbox-label   unselectable" style="">I agree to receive SMS for One-Time Passwords</label></div> -->
-          <button class=" unselectable mt-5 py-0 px-1 focus:outline-none rounded-lg text-lg submit-button " id="mySubmit" type="submit" style="width: 85%;margin:auto;margin-top:10px;height:40px;">Get My Free Gold IRA Kit!</button>
+          <button class="tracking-tight unselectable mt-5 py-0 px-1 focus:outline-none rounded-lg text-lg submit-button " id="mySubmit" type="submit" style="width: 85%;margin:auto;margin-top:10px;height:40px;">Get My Free Gold IRA Kit!</button>
           <button onclick="validateSMS()" class="hide unselectable  shadow-sm shadow-gray-700/30  border-0 mt-5 py-2 px-6 focus:outline-none  hover:text-[#FFF] rounded-lg text-lg  " id="mySubmit2" type="button" style="margin:auto;margin-top:10px; color: white; background-color: green; width: 100%; font-size: 30px;height: 65px!important;">ENTER CODE</button>
         </div>
       </div>
