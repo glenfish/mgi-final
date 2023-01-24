@@ -78,28 +78,7 @@
    color: rgb(50, 50, 50)!important;
    padding-bottom: 20px!important;
    }
-   .submit-button {
-   height: 70px!important;
-   min-width: 100%!important;
-   /* width: 100%!important; */
-   background-color: rgba(244, 196, 50, 1)!important;
-   font-size: 22px!important;
-   color: rgb(147, 114, 15)!important;
-   border: 2px solid rgb(217, 170, 30)!important;
-   /* box-shadow: white 0px 0px 30px 30px; */
-   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px!important; */
-   /* box-shadow: rgba(233, 206, 70, 0.4) 0px 0px 10px 3px!important; */
-   letter-spacing: 0px;
-   margin: 0 auto;
-   }
-   .submit-button:hover {
-   height: 70px!important;
-   min-width: 100%!important;
-   background-color: rgba(244, 196, 50, 1)!important;
-   color: #092f6d!important;
-   border: 1px solid white!important;
-   box-shadow: rgba(134, 134, 134, 0.3) 0px 0px 20px 4px!important;
-   }
+   
    .r100vw {
    max-width: 3440px!important;
    margin: 0 auto!important;
@@ -222,7 +201,7 @@
       /* width: 100%!important; */
       background-color: rgba(244, 196, 50, 1)!important;
       font-size: 22px!important;
-      color: rgb(147, 114, 15)!important;
+      color: rgb(129, 99, 11)!important;
       border: 2px solid rgb(217, 170, 30)!important;
       /* box-shadow: white 0px 0px 30px 30px; */
       /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px!important; */
@@ -692,7 +671,7 @@ word-spacing: 2px!important;
 }
 @media  (min-width: 810px) and (max-width: 1421px)  { 
    #formContainer {
-      width:620px!important;
+      /* width:620px!important; */
       position:relative;
       top: -110px;
    }
@@ -785,27 +764,86 @@ word-spacing: 2px!important;
 }
 .checkbox-label {
    display:inline-block!important;
-   color: brown!important;
-   font-size: 0.9rem!important;
+   color: rgb(146, 104, 0)!important;
+   font-size: 1rem!important;
    /* min-width: 350px!important; */
-   margin-left: 8px;
-   position: relative;
-   top: -4px!important;
+   background-color: rgba(255,255,255,0.8);
+   padding: 8px;
+   border-radius: 2px;
+   position:relative;
+   left:1px;
+   top:-5px;
 
 }
 
-@media (min-width:480px) and (max-width:1019px) { 
+@media (min-width:480px) and (max-width:1288px) { 
    .checkbox-label {
-   color: brown!important;
-   font-size: 0.8rem!important;
+      color: rgb(146, 104, 0)!important;
+   font-size: 1rem!important;
+   background-color: rgba(255,255,255,0.8);
+   padding: 8px;
+   border-radius: 2px;
+   position:relative;
+   left:0px;
+   top:-4px;
    /* min-width: 300px!important; */
 }
 }
-@media (max-width:479px) { 
+@media (min-width:343px) and (max-width:479px) { 
    .checkbox-label {
-   color: brown!important;
+      color: rgb(146, 104, 0)!important;
    font-size: 0.8rem!important;
-   /* min-width: 280px!important; */
+   background-color: rgba(255,255,255,0.8);
+   padding: 8px;
+   border-radius: 2px;
+   position:relative;
+   left:0px;
+   line-height:29px;
+}
+.checkbox  {
+   /* margin-left: 0; */
+   /* display:block; */
+   position:relative!important;
+   /* left: 20px!important; */
+   top: 3px!important;
+   /* display:none; */
+   width: 25px!important;
+   height: 25px!important;
+   /* outline:none!important; */
+   /* text-align:left!important; */
+   /* max-width:50px!important; */
+   display:inline-block!important;
+   max-width:25px!important;
+   
+}
+}
+
+@media (max-width:342px) { 
+   .checkbox-label {
+      color: rgb(146, 104, 0)!important;
+   font-size: 0.7rem!important;
+   background-color: rgba(255,255,255,0.8);
+   padding: 8px;
+   border-radius: 2px;
+   position:relative;
+   left:0px;
+   line-height:31px;
+}
+.checkbox  {
+   /* margin-left: 0; */
+   /* display:block; */
+   position:relative!important;
+   /* left: 20px!important; */
+   top: 3px!important;
+   /* display:none; */
+   width: 25px!important;
+   height: 25px!important;
+   /* outline:none!important; */
+   /* text-align:left!important; */
+   /* max-width:50px!important; */
+   display:inline-block!important;
+   max-width:25px!important;
+   
 }
 }
 
@@ -842,7 +880,7 @@ background-image: linear-gradient(to top, rgba(255,255,255,0.6), rgb(255, 255, 2
 top: 20px; */
    }
 }
-@media (max-width:1421px) { 
+@media (max-width:1197px) { 
 #mgi-logo {
    justify-content:center;
    padding-left: 0!important;
