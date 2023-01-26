@@ -670,7 +670,7 @@ word-spacing: 2px!important;
       position:relative;
       border: 1px solid;
       border-radius: 30px;
-      border-color: var(--bordercolor);
+      border-color: var(--formcolor);
       padding: 32px;
       margin:0px auto;
       /* background-image: linear-gradient(to top, rgba(255,255,255,0.4), rgb(255, 255, 255)); */
