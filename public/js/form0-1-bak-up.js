@@ -1,3 +1,38 @@
+function getParams() {
+    const queryString = window.location.search;
+    //   console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    firstname = urlParams.get('firstname');
+    lastname = urlParams.get('lastname');
+    email = urlParams.get('email');
+    phone = urlParams.get('phone');
+    myIRA = urlParams.get('myIRA');
+    my401 = urlParams.get('my401');
+    document.getElementById('firstname').value = firstname;
+    document.getElementById('lastname').value = lastname;
+    document.getElementById('email').value = email;
+    document.getElementById('phone').value = phone;
+    if (urlParams.get('ls')) {
+        leadSource = urlParams.get('ls');
+    } else {
+        leadSource = 'homepage'
+    }
+    console.log(leadSource);
+    if (myIRA == 'yes') {
+        document.getElementById('i-have-ira').checked = true;
+    } else {
+        document.getElementById('i-have-ira').checked = false;
+    }
+
+    if (my401 == 'yes') {
+        document.getElementById('i-have-401').checked = true;
+    } else {
+        document.getElementById('i-have-401').checked = false;
+
+    }
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     // USAGE - uncomment the URL required below:
@@ -137,39 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    function getParams() {
-        const queryString = window.location.search;
-        //   console.log(queryString);
-        const urlParams = new URLSearchParams(queryString);
-        firstname = urlParams.get('firstname');
-        lastname = urlParams.get('lastname');
-        email = urlParams.get('email');
-        phone = urlParams.get('phone');
-        myIRA = urlParams.get('myIRA');
-        my401 = urlParams.get('my401');
-        document.getElementById('firstname').value = firstname;
-        document.getElementById('lastname').value = lastname;
-        document.getElementById('email').value = email;
-        document.getElementById('phone').value = phone;
-        if (urlParams.get('ls')) {
-            leadSource = urlParams.get('ls');
-        } else {
-            leadSource = 'homepage'
-        }
-        console.log(leadSource);
-        if (myIRA == 'yes') {
-            document.getElementById('i-have-ira').checked = true;
-        } else {
-            document.getElementById('i-have-ira').checked = false;
-        }
     
-        if (my401 == 'yes') {
-            document.getElementById('i-have-401').checked = true;
-        } else {
-            document.getElementById('i-have-401').checked = false;
-    
-        }
-    }
     function postSMS(email, phone) {
         
         var xhr = new XMLHttpRequest();
