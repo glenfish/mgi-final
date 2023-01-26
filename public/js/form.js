@@ -293,7 +293,7 @@ function validateSMS() {
 document.addEventListener("DOMContentLoaded", () => {
 
  
-    alert('scrolled');
+    // alert('scrolled');
          if (navigator.userAgent.match(/Android/i)
          || navigator.userAgent.match(/webOS/i)
          || navigator.userAgent.match(/iPhone/i)
