@@ -108,9 +108,9 @@
       }
       #formContainer {
          
-         width: 100%!important;
+      width: 100%!important;
       position:relative;
-      top: -40px;
+      top: -90px;
       border-radius: 30px;
       border-color: var(--bordercolor);
       padding: 32px;
@@ -667,7 +667,7 @@ word-spacing: 2px!important;
       width:550px!important;
       width: 100%!important;
       position:relative;
-      top: -45px;
+      /* top: -45px; */
       border-radius: 30px;
       border-color: var(--bordercolor);
       padding: 32px;
@@ -686,7 +686,7 @@ word-spacing: 2px!important;
    }
 }
 
-@media (min-width: 525px) and  (max-width:1094px) { 
+@media screen and (min-width: 525px) and  (max-width:1094px) { 
    #formContainer {
       position:relative!important;
       top: -100px!important;
