@@ -776,12 +776,16 @@ word-spacing: 2px!important;
    color: rgb(146, 104, 0)!important;
    font-size: 1rem!important;
    /* min-width: 350px!important; */
-   background-color: rgba(255,255,255,0.8);
+   background-color: rgba(255,255,255,0.6);
    padding: 8px;
    border-radius: 2px;
    position:relative;
-   left:1px;
    top:-5px;
+   border: 0px solid white;
+   border-radius: 5px;
+   position:relative;
+   left:4px;
+   display:inline-block;
 
 }
 
@@ -789,25 +793,32 @@ word-spacing: 2px!important;
    .checkbox-label {
       color: rgb(146, 104, 0)!important;
    font-size: 1rem!important;
-   background-color: rgba(255,255,255,0.8);
+   background-color: rgba(255,255,255,0.6);
    padding: 8px;
    border-radius: 2px;
    position:relative;
-   left:0px;
    top:-4px;
-   /* min-width: 300px!important; */
+   border: 0px solid white;
+   border-radius: 5px;
+   position:relative;
+   left:4px;
+   display:inline-block;
 }
 }
 @media (min-width:343px) and (max-width:479px) { 
    .checkbox-label {
       color: rgb(146, 104, 0)!important;
    font-size: 0.8rem!important;
-   background-color: rgba(255,255,255,0.8);
+   background-color: rgba(255,255,255,0.6);
    padding: 8px;
    border-radius: 2px;
    position:relative;
-   left:0px;
    line-height:29px;
+   border: 0px solid white;
+   border-radius: 5px;
+   position:relative;
+   left:4px;
+   display:inline-block;
 }
 .checkbox  {
    /* margin-left: 0; */
@@ -829,14 +840,17 @@ word-spacing: 2px!important;
 
 @media (max-width:342px) { 
    .checkbox-label {
-      color: rgb(146, 104, 0)!important;
+   color: rgb(146, 104, 0)!important;
    font-size: 0.7rem!important;
-   background-color: rgba(255,255,255,0.8);
+   background-color: rgba(255,255,255,0.6);
    padding: 8px;
-   border-radius: 2px;
+   border: 0px solid white;
+   border-radius: 5px;
    position:relative;
-   left:0px;
+   left:4px;
+   display:inline-block;
    line-height:31px;
+   
 }
 .checkbox  {
    /* margin-left: 0; */
