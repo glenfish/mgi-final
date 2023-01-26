@@ -1,1 +1,313 @@
-var _0x435889=_0x307b;(function(_0x38b908,_0x2884dd){var _0x1c4ec4=_0x307b,_0x561ae4=_0x38b908();while(!![]){try{var _0xff88e8=-parseInt(_0x1c4ec4(0x1ba))/0x1*(-parseInt(_0x1c4ec4(0x19f))/0x2)+parseInt(_0x1c4ec4(0x18e))/0x3+-parseInt(_0x1c4ec4(0x1c4))/0x4+parseInt(_0x1c4ec4(0x197))/0x5*(-parseInt(_0x1c4ec4(0x1a1))/0x6)+parseInt(_0x1c4ec4(0x1c8))/0x7+parseInt(_0x1c4ec4(0x1cf))/0x8*(parseInt(_0x1c4ec4(0x1b2))/0x9)+-parseInt(_0x1c4ec4(0x1b8))/0xa;if(_0xff88e8===_0x2884dd)break;else _0x561ae4['push'](_0x561ae4['shift']());}catch(_0x35bc44){_0x561ae4['push'](_0x561ae4['shift']());}}}(_0x25bd,0xbee15));const SMSPostURL=_0x435889(0x1b4),formPostURL='https://app.headlessforms.cloud/api/v1/form-submission/OLFfTrwhT1';function _0x25bd(){var _0x2076f8=['hide','11448KSFuLH','send','slice','toUpperCase','mySubmit2','email','mySubmit','add','Success!','readyState','3382252NikZMc','&firstname=','log','yes','2137380NEsBaE','https://mygoldira.us/confirmation/','please\x20correct','attributes','input','off','submit','1013200uVjOig','phone','checked','forEach','target','setCustomValidity','addEventListener','href','invalid','valid','setAttribute','Content-Type','4301460WLHrsy','search','open','innerHTML','setRequestHeader','5190','application/json','required','A\x20code\x20was\x20sent\x20to\x20your\x20mobile\x20phone\x20for\x20verification.\x20Please\x20enter\x20it\x20and\x20click\x20the\x20button\x20ENTER\x20CODE.','395dsNDyN','stringify','Please\x20try\x20again.','get','DONE','lastname','charAt','name','246HozYaR','sms-box','34656KXypYd','test','remove','myForm','&my401=','&myIRA=','?ls=','Based\x20on\x20your\x20response,\x20unfortunately\x20you\x20do\x20not\x20legally\x20qualify\x20for\x20a\x20Gold\x20IRA\x20at\x20this\x20time.','i-have-ira','myIRA','classList','disabled','focus','firstname','getElementById','length','POST','9zfjFOe','value','https://api.form-data.com/f/1pd5lep14spq6wv9gewxks','i-have-401','my401','smscode','11902020xAeOMk'];_0x25bd=function(){return _0x2076f8;};return _0x25bd();}var firstname='',lastname='',email='',phone='',leadSource='',myIRA='',ihaveira='',my401='',ihave401='',form=document[_0x435889(0x1af)](_0x435889(0x1a4)),submitButton=document[_0x435889(0x1af)](_0x435889(0x1c0)),submitButton2=document[_0x435889(0x1af)](_0x435889(0x1be)),checkBoxes=document['getElementById']('checkboxes'),smsBox=document['getElementById'](_0x435889(0x1a0));form[_0x435889(0x188)](_0x435889(0x1ce),function(_0x4bddfb){var _0x1e9fb2=_0x435889;_0x4bddfb['preventDefault'](),submitButton[_0x1e9fb2(0x18c)]('disabled',_0x1e9fb2(0x1ac));if(document['getElementById'](_0x1e9fb2(0x1b5))[_0x1e9fb2(0x1d1)]||document[_0x1e9fb2(0x1af)]('i-have-ira')['checked']){alert(_0x1e9fb2(0x196)),checkBoxes[_0x1e9fb2(0x1ab)][_0x1e9fb2(0x1c1)](_0x1e9fb2(0x1b9)),smsBox[_0x1e9fb2(0x1ab)]['remove'](_0x1e9fb2(0x1b9)),submitButton[_0x1e9fb2(0x1ab)]['add'](_0x1e9fb2(0x1b9)),submitButton2[_0x1e9fb2(0x1ab)]['remove'](_0x1e9fb2(0x1b9)),document['getElementById']('smscode')['focus'](),document[_0x1e9fb2(0x1af)](_0x1e9fb2(0x1b7))['setAttribute'](_0x1e9fb2(0x195),'');document['getElementById'](_0x1e9fb2(0x1bf))[_0x1e9fb2(0x1b3)]&&(email=document[_0x1e9fb2(0x1af)]('email')[_0x1e9fb2(0x1b3)]);;document[_0x1e9fb2(0x1af)](_0x1e9fb2(0x1d0))[_0x1e9fb2(0x1b3)]&&(phone=document['getElementById']('phone')['value']);;email&&phone?postSMS(email,phone):alert(_0x1e9fb2(0x199));}else submitButton[_0x1e9fb2(0x1ab)][_0x1e9fb2(0x1c1)]('hide'),alert(_0x1e9fb2(0x1a8));});const inputs=document['querySelectorAll'](_0x435889(0x1cc)),patterns={'firstname':/.+/,'lastname':/.+/,'email':/^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,'phone':/^(?!.*911.*\d{4})((\+?1[\/ ]?)?(?![\(\. -]?555.*)\( ?[2-9][0-9]{2} ?\) ?|(\+?1[\.\/ -])?[2-9][0-9]{2}[\.\/ -]?)(?!555.?01..)([2-9][0-9]{2})[\.\/ -]?([0-9]{4})$/,'smscode':/\d{4}$/};function _0x307b(_0xb31170,_0x14d422){var _0x25bddc=_0x25bd();return _0x307b=function(_0x307b6e,_0x1f4024){_0x307b6e=_0x307b6e-0x187;var _0x301eab=_0x25bddc[_0x307b6e];return _0x301eab;},_0x307b(_0xb31170,_0x14d422);}function validate(_0x16bc1b,_0x544309){var _0x1f0e63=_0x435889;return _0x544309[_0x1f0e63(0x1a2)](_0x16bc1b[_0x1f0e63(0x1b3)])?(_0x16bc1b[_0x1f0e63(0x1ab)][_0x1f0e63(0x1c1)](_0x1f0e63(0x18b)),_0x16bc1b[_0x1f0e63(0x1ab)][_0x1f0e63(0x1a3)](_0x1f0e63(0x18a)),!![]):(_0x16bc1b['classList']['add']('invalid'),![]);}inputs[_0x435889(0x1d2)](_0x5e4895=>{_0x5e4895['addEventListener']('keyup',_0x3ac8e5=>{var _0x4e3720=_0x307b;let _0x1520af=validate(_0x3ac8e5[_0x4e3720(0x1d3)],patterns[_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x1cb)][_0x4e3720(0x19e)][_0x4e3720(0x1b3)]]);!_0x1520af?_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x187)](_0x4e3720(0x1ca)):_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x187)]('');if(_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x1cb)][_0x4e3720(0x19e)][_0x4e3720(0x1b3)]==_0x4e3720(0x1d0)){const _0x5b4ef6=document['getElementById'](_0x4e3720(0x1d0));_0x3ac8e5['target']['value'][_0x4e3720(0x1b0)]<0xa&&(_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x1ab)][_0x4e3720(0x1a3)](_0x4e3720(0x18b)),_0x3ac8e5['target']['classList'][_0x4e3720(0x1c1)](_0x4e3720(0x18a)));;}if(_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x1cb)][_0x4e3720(0x19e)][_0x4e3720(0x1b3)]=='email'){const _0x4dc45a=document['getElementById'](_0x4e3720(0x1bf));_0x3ac8e5['target'][_0x4e3720(0x1b3)][_0x4e3720(0x1b0)]<0x8&&(_0x3ac8e5['target'][_0x4e3720(0x1ab)][_0x4e3720(0x1a3)](_0x4e3720(0x18b)),_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x1ab)][_0x4e3720(0x1c1)](_0x4e3720(0x18a)));;}if(_0x3ac8e5[_0x4e3720(0x1d3)]['attributes'][_0x4e3720(0x19e)][_0x4e3720(0x1b3)]=='firstname'){const _0x3dd42b=document[_0x4e3720(0x1af)]('firstname');_0x3ac8e5[_0x4e3720(0x1d3)]['value'][_0x4e3720(0x1b0)]<=0x1&&(_0x3ac8e5['target'][_0x4e3720(0x1ab)][_0x4e3720(0x1a3)]('valid'),_0x3ac8e5[_0x4e3720(0x1d3)]['classList'][_0x4e3720(0x1c1)]('invalid'));;}if(_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x1cb)][_0x4e3720(0x19e)][_0x4e3720(0x1b3)]==_0x4e3720(0x19c)){const _0x58671a=document[_0x4e3720(0x1af)](_0x4e3720(0x19c));_0x3ac8e5[_0x4e3720(0x1d3)][_0x4e3720(0x1b3)][_0x4e3720(0x1b0)]<=0x1&&(_0x3ac8e5[_0x4e3720(0x1d3)]['classList'][_0x4e3720(0x1a3)]('valid'),_0x3ac8e5[_0x4e3720(0x1d3)]['classList'][_0x4e3720(0x1c1)]('invalid'));;}});});function getParams(){var _0x478a6a=_0x435889;const _0x556ce2=window['location'][_0x478a6a(0x18f)],_0x2f4772=new URLSearchParams(_0x556ce2);firstname=_0x2f4772['get']('firstname'),lastname=_0x2f4772[_0x478a6a(0x19a)]('lastname'),email=_0x2f4772[_0x478a6a(0x19a)](_0x478a6a(0x1bf)),phone=_0x2f4772['get'](_0x478a6a(0x1d0)),myIRA=_0x2f4772[_0x478a6a(0x19a)](_0x478a6a(0x1aa)),my401=_0x2f4772['get'](_0x478a6a(0x1b6)),document['getElementById'](_0x478a6a(0x1ae))[_0x478a6a(0x1b3)]=firstname,document[_0x478a6a(0x1af)](_0x478a6a(0x19c))[_0x478a6a(0x1b3)]=lastname,document[_0x478a6a(0x1af)]('email')[_0x478a6a(0x1b3)]=email,document['getElementById']('phone')[_0x478a6a(0x1b3)]=phone,_0x2f4772[_0x478a6a(0x19a)]('ls')?leadSource=_0x2f4772[_0x478a6a(0x19a)]('ls'):leadSource='homepage',console[_0x478a6a(0x1c6)](leadSource),myIRA==_0x478a6a(0x1c7)?document[_0x478a6a(0x1af)](_0x478a6a(0x1a9))['checked']=!![]:document[_0x478a6a(0x1af)](_0x478a6a(0x1a9))[_0x478a6a(0x1d1)]=![],my401==_0x478a6a(0x1c7)?document['getElementById'](_0x478a6a(0x1b5))[_0x478a6a(0x1d1)]=!![]:document['getElementById'](_0x478a6a(0x1b5))[_0x478a6a(0x1d1)]=![];}function postSMS(_0x25dd12,_0x4b18f4){var _0xdc902a=_0x435889,_0x478148=new XMLHttpRequest();const _0x1a9957=SMSPostURL;_0x478148[_0xdc902a(0x190)](_0xdc902a(0x1b1),_0x1a9957,!![]),_0x478148[_0xdc902a(0x192)]('Content-Type',_0xdc902a(0x194)),_0x478148[_0xdc902a(0x1bb)](JSON['stringify']({'email':_0x25dd12,'phone':_0x4b18f4}));};function postToForm(_0x54bd9f,_0x1cc3f6,_0x5d713f,_0x40929f,_0x4e6dff,_0x3b681a,_0x127a9a){var _0x58addc=_0x435889,_0x16682f=_0x58addc(0x1c9),_0x360adf=_0x16682f+_0x58addc(0x1a7)+_0x4e6dff+_0x58addc(0x1c5)+_0x54bd9f+'&lastname='+_0x1cc3f6+'&email='+_0x5d713f+'&phone='+_0x40929f+_0x58addc(0x1a6)+_0x3b681a+_0x58addc(0x1a5)+_0x127a9a,_0x2e6b84=new XMLHttpRequest();const _0x222940=formPostURL;_0x2e6b84[_0x58addc(0x190)](_0x58addc(0x1b1),_0x222940,!![]),_0x2e6b84[_0x58addc(0x192)](_0x58addc(0x18d),_0x58addc(0x194)),_0x2e6b84['send'](JSON[_0x58addc(0x198)]({'email':_0x5d713f,'phone':_0x40929f,'firstname':_0x54bd9f,'lastname':_0x1cc3f6,'myIRA':_0x3b681a,'my401':_0x127a9a,'leadSource':_0x4e6dff})),_0x2e6b84['onreadystatechange']=function(){var _0xfd8396=_0x58addc;_0x2e6b84[_0xfd8396(0x1c3)]==XMLHttpRequest[_0xfd8396(0x19b)]&&(window['location'][_0xfd8396(0x189)]=_0x360adf);};};function capitalizeFirstLetter(_0x378fbf){var _0x4d3582=_0x435889;return _0x378fbf[_0x4d3582(0x19d)](0x0)[_0x4d3582(0x1bd)]()+_0x378fbf[_0x4d3582(0x1bc)](0x1);}function sendTheFormData(){var _0x43ab6d=_0x435889;document[_0x43ab6d(0x1af)](_0x43ab6d(0x1ae))['value']&&(firstname=document[_0x43ab6d(0x1af)]('firstname')[_0x43ab6d(0x1b3)]);;document['getElementById']('lastname')[_0x43ab6d(0x1b3)]&&(lastname=document[_0x43ab6d(0x1af)](_0x43ab6d(0x19c))['value']);;document['getElementById'](_0x43ab6d(0x1bf))[_0x43ab6d(0x1b3)]&&(email=document[_0x43ab6d(0x1af)](_0x43ab6d(0x1bf))['value']);;document['getElementById'](_0x43ab6d(0x1d0))[_0x43ab6d(0x1b3)]&&(phone=document['getElementById'](_0x43ab6d(0x1d0))['value']);;document[_0x43ab6d(0x1af)](_0x43ab6d(0x1a9))[_0x43ab6d(0x1d1)]?(ihaveira='on',myIRA='yes'):(ihaveira=_0x43ab6d(0x1cd),myIRA='no'),document[_0x43ab6d(0x1af)](_0x43ab6d(0x1b5))[_0x43ab6d(0x1d1)]?(ihave401='on',my401=_0x43ab6d(0x1c7)):(ihave401=_0x43ab6d(0x1cd),my401='no'),submitButton[_0x43ab6d(0x191)]=_0x43ab6d(0x1c2),postToForm(capitalizeFirstLetter(firstname),capitalizeFirstLetter(lastname),email,phone,leadSource,myIRA,my401);}function validateSMS(){var _0x3a87ca=_0x435889;let _0x560197=document[_0x3a87ca(0x1af)](_0x3a87ca(0x1b7))[_0x3a87ca(0x1b3)];_0x560197==_0x3a87ca(0x193)?(submitButton2['innerHTML']='Success!',submitButton2[_0x3a87ca(0x18c)]('disabled',_0x3a87ca(0x1ac)),sendTheFormData()):(alert('Incorrect.\x20Please\x20try\x20again.'),document[_0x3a87ca(0x1af)](_0x3a87ca(0x1b7))[_0x3a87ca(0x1b3)]='',document[_0x3a87ca(0x1af)](_0x3a87ca(0x1b7))[_0x3a87ca(0x1ad)]());}
+// USAGE - uncomment the URL required below:
+
+// posts to Form-Data APMGoldIRA list
+// const formPostURL = 'https://api.form-data.com/f/6n9bwus4a5vhsex03mjym';
+
+// posts to SendSMS list
+const SMSPostURL = 'https://api.form-data.com/f/1pd5lep14spq6wv9gewxks';
+
+// Zapier webhook
+// const formPostURL = 'https://hooks.zapier.com/hooks/catch/13179157/bp9o3fl/';
+
+// posts to test form
+// const formPostURL = 'https://api.form-data.com/f/a5pbtwu6tt501nmfgff5o3g';
+
+// posts to HeadlessForms
+const formPostURL = 'https://app.headlessforms.cloud/api/v1/form-submission/OLFfTrwhT1';
+
+
+var firstname = '';
+var lastname = '';
+var email = '';
+var phone = '';
+var leadSource = '';
+var myIRA = '';
+var ihaveira = '';
+var my401 = '';
+var ihave401 = '';
+var form = document.getElementById('myForm');
+var submitButton = document.getElementById('mySubmit');
+var submitButton2 = document.getElementById('mySubmit2');
+var checkBoxes = document.getElementById('checkboxes');
+var smsBox = document.getElementById('sms-box');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Disable the submit button
+    submitButton.setAttribute('disabled', 'disabled');
+
+    if (document.getElementById('i-have-401').checked || document.getElementById('i-have-ira').checked) 
+    {
+
+        alert('A code was sent to your mobile phone for verification. Please enter it and click the button ENTER CODE.');
+        
+        checkBoxes.classList.add('hide');
+        smsBox.classList.remove('hide');
+        //hide old button
+        submitButton.classList.add('hide');
+        //show new button
+        submitButton2.classList.remove('hide');
+        document.getElementById("smscode").focus();
+        document.getElementById('smscode').setAttribute('required', '');
+        if (document.getElementById('email').value) {
+            email = document.getElementById('email').value
+        };
+        if (document.getElementById('phone').value) {
+            phone = document.getElementById('phone').value
+        };
+        if (email && phone) {
+            
+        postSMS(email, phone)
+        } else {
+            alert('Please try again.');
+        }
+    } else {
+        submitButton.classList.add('hide');
+        alert('Based on your response, unfortunately you do not legally qualify for a Gold IRA at this time.');
+    }
+});
+
+//Validation script here
+
+const inputs = document.querySelectorAll("input");
+
+const patterns = {
+    firstname: /.+/,
+    lastname: /.+/,
+    email: /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+    phone: /^(?!.*911.*\d{4})((\+?1[\/ ]?)?(?![\(\. -]?555.*)\( ?[2-9][0-9]{2} ?\) ?|(\+?1[\.\/ -])?[2-9][0-9]{2}[\.\/ -]?)(?!555.?01..)([2-9][0-9]{2})[\.\/ -]?([0-9]{4})$/,
+    smscode: /\d{4}$/
+};
+
+// validation function
+function validate(field, regex) {
+    if (regex.test(field.value)) {
+        field.classList.add('valid');
+        field.classList.remove('invalid');
+        return true;
+    } else {
+        field.classList.add('invalid');
+        return false;
+    }
+}
+
+inputs.forEach(input => {
+    input.addEventListener("keyup", e => {
+
+        let isvalid = validate(e.target, patterns[e.target.attributes.name.value]);
+        if (!isvalid) {
+            e.target.setCustomValidity("please correct");
+        } else {
+            e.target.setCustomValidity("");
+        }
+        if (e.target.attributes.name.value == 'phone') {
+            const label = document.getElementById('phone');
+            if (e.target.value.length < 10) {
+                e.target.classList.remove('valid');
+                e.target.classList.add('invalid');
+            };
+        }
+        if (e.target.attributes.name.value == 'email') {
+            const label = document.getElementById('email');
+            if (e.target.value.length < 8) {
+                e.target.classList.remove('valid');
+                e.target.classList.add('invalid');
+            };
+        }
+        if (e.target.attributes.name.value == 'firstname') {
+            const label = document.getElementById('firstname');
+            if (e.target.value.length <= 1) {
+                e.target.classList.remove('valid');
+                e.target.classList.add('invalid');
+            };
+        }
+        if (e.target.attributes.name.value == 'lastname') {
+            const label = document.getElementById('lastname');
+            if (e.target.value.length <= 1) {
+                e.target.classList.remove('valid');
+                e.target.classList.add('invalid');
+            };
+        }
+    });
+});
+
+
+
+
+function getParams() {
+    const queryString = window.location.search;
+    //   console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    firstname = urlParams.get('firstname');
+    lastname = urlParams.get('lastname');
+    email = urlParams.get('email');
+    phone = urlParams.get('phone');
+    myIRA = urlParams.get('myIRA');
+    my401 = urlParams.get('my401');
+    document.getElementById('firstname').value = firstname;
+    document.getElementById('lastname').value = lastname;
+    document.getElementById('email').value = email;
+    document.getElementById('phone').value = phone;
+    if (urlParams.get('ls')) {
+        leadSource = urlParams.get('ls');
+    } else {
+        leadSource = 'homepage'
+    }
+    console.log(leadSource);
+    if (myIRA == 'yes') {
+        document.getElementById('i-have-ira').checked = true;
+    } else {
+        document.getElementById('i-have-ira').checked = false;
+    }
+
+    if (my401 == 'yes') {
+        document.getElementById('i-have-401').checked = true;
+    } else {
+        document.getElementById('i-have-401').checked = false;
+
+    }
+}
+function postSMS(email, phone) {
+    
+    var xhr = new XMLHttpRequest();
+    const yourUrl = SMSPostURL;
+
+    // ------- post mechanism to send to SendSMS list
+        xhr.open("POST", yourUrl, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+        email: email,
+        phone: phone
+        }));
+    // ------- end post mechanism to send to SendSMS list
+
+
+
+};
+
+    function postToForm(firstname, lastname, email, phone, leadSource, myIRA, my401) {
+        // set url params for thankyou page
+        var thankyouPage = 'https://mygoldira.us/confirmation/';
+        // var thankyouPage = 'https://mygoldira.netlify.app/confirmation/';
+        var thankyouPageLink = thankyouPage + '?ls=' + leadSource + '&firstname=' + firstname + '&lastname=' + lastname + '&email=' + email + '&phone=' + phone + '&myIRA=' + myIRA + '&my401=' + my401;
+        // send data to form handler
+        var xhr = new XMLHttpRequest();
+        const yourUrl = formPostURL;
+
+        
+
+        // ------- post mechanism to send to APMGoldIRA list
+
+        xhr.open("POST", yourUrl, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+            email: email,
+            phone: phone,
+            firstname: firstname,
+            lastname: lastname,
+            myIRA: myIRA,
+            my401: my401,
+            leadSource: leadSource
+
+        }));
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.DONE) {
+                // setTimeout(function() {window.location.href = "https://MyGoldIRA.us/confirmation"}, 1000);
+                window.location.href = thankyouPageLink;
+            }
+        }
+
+    };
+
+
+
+function capitalizeFirstLetter(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function sendTheFormData() {
+
+            // setTimeout(function() {window.location.href = "https://MyGoldIRA.us/confirmation"}, 1000);
+            // display the popover form to collect the code 5190
+            // var smsCode = prompt("We sent you a code to your mobile phone. Please enter it below to proceed ...");
+            
+            
+                // send the main form data
+                if (document.getElementById('firstname').value) {
+                    firstname = document.getElementById('firstname').value
+                };
+                if (document.getElementById('lastname').value) {
+                    lastname = document.getElementById('lastname').value
+                };
+                if (document.getElementById('email').value) {
+                    email = document.getElementById('email').value
+                };
+                if (document.getElementById('phone').value) {
+                    phone = document.getElementById('phone').value
+                };
+                if (document.getElementById('i-have-ira').checked) {
+                    ihaveira = 'on';
+                    myIRA = 'yes';
+                } else {
+                    ihaveira = 'off';
+                    myIRA = 'no';
+                }
+            
+                if (document.getElementById('i-have-401').checked) {
+                    ihave401 = 'on';
+                    my401 = 'yes';
+                } else {
+                    ihave401 = 'off';
+                    my401 = 'no';
+                }
+                submitButton.innerHTML = 'Success!';
+                postToForm(capitalizeFirstLetter(firstname), capitalizeFirstLetter(lastname), email, phone, leadSource, myIRA, my401);
+
+
+
+}
+
+
+
+
+function validateSMS() {
+    let smsCode = document.getElementById('smscode').value;
+    if (smsCode == '5190') {
+
+        // if the value is correct, send form data
+        // update message on submit button
+        submitButton2.innerHTML = 'Success!';
+        submitButton2.setAttribute('disabled', 'disabled');
+        sendTheFormData();
+    } else {
+    alert('Incorrect. Please try again.')
+    document.getElementById("smscode").value = '';
+    document.getElementById("smscode").focus();
+    }
+ 
+}
+
+
+document.addEventListener("load", scrollIfMobile);
+
+function scrollIfMobile() {
+    
+         if (navigator.userAgent.match(/Android/i)
+         || navigator.userAgent.match(/webOS/i)
+         || navigator.userAgent.match(/iPhone/i)
+         || navigator.userAgent.match(/iPad/i)
+         || navigator.userAgent.match(/iPod/i)
+         || navigator.userAgent.match(/BlackBerry/i)
+         || navigator.userAgent.match(/Windows Phone/i)) {
+            // alert('scrolled!');
+            window.scrollBy(0, 100);
+      }
+
+}
+
+
+
+
+    
