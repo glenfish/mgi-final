@@ -1183,7 +1183,7 @@ h2.headline{
  }
 
  input:focus {
-   background-color: rgba(255,255,255,0.8)!important;
+   background-color: rgba(255,255,255,0.5)!important;
    border-radius: 6px;
  }
  #form-headline {
