@@ -100,7 +100,7 @@
       --themecolor: #edac14;
       /* --themecolor: #c2ba5e; */
       --bordercolor: #e4c08e;
-      --formcolor: rgba(255,255,255,0.01);
+      --formcolor: rgba(104, 104, 104, 0.2);
       --submitbutton: #edac14;
       }
       body {
@@ -112,7 +112,8 @@
       position:relative;
       top: -90px;
       border-radius: 30px;
-      border-color: var(--bordercolor);
+      border: 1px solid;
+      border-color: var(--formcolor);
       padding: 16px;
       margin:0px auto;
       /* background-image: linear-gradient(to top, rgba(255,255,255,0.1), rgb(255, 255, 255)); */
@@ -658,7 +659,7 @@ word-spacing: 2px!important;
 
 .join-americans {
    font-family: 'Prata', serif!important;
-   font-size: 0.8rem!important;
+   font-size: 1.0rem!important;
    text-align:center;
    }
 }
