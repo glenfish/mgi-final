@@ -290,9 +290,9 @@ function validateSMS() {
 }
 
 
-document.addEventListener("load", scrollIfMobile);
+document.addEventListener("load", () => {
 
-function scrollIfMobile() {
+ 
     
          if (navigator.userAgent.match(/Android/i)
          || navigator.userAgent.match(/webOS/i)
@@ -305,7 +305,7 @@ function scrollIfMobile() {
             window.scrollBy(0, 100);
       }
 
-}
+});
 
 
 
