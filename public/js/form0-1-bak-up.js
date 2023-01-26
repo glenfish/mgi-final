@@ -33,7 +33,7 @@ function getParams() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
+
 
     // USAGE - uncomment the URL required below:
     
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     
-    });
+
     
     
     
