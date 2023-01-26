@@ -668,7 +668,7 @@ word-spacing: 2px!important;
       width:550px!important;
       width: 100%!important;
       position:relative;
-      /* top: -45px; */
+      border: 1px solid;
       border-radius: 30px;
       border-color: var(--bordercolor);
       padding: 32px;
