@@ -998,7 +998,7 @@ margin-top:20px;
 
 }
 
-@media  (max-width:364px) { 
+@media  (max-width:305px) { 
    .break-subheadline {
       display:inline!important;
    
@@ -1192,6 +1192,22 @@ h2.headline{
 
  @media (min-width: 374px) {
    #form-headline {
-      font-size:1.5rem; line-height:1.825rem;
+      font-size:1.8rem!important; line-height:1.825rem;
+    }
+ }
+
+ @media (min-width: 330px) and (max-width: 373px) {
+   #form-headline {
+      font-size:1.6rem!important; line-height:1.825rem;
+    }
+ }
+ @media (min-width: 306px) and (max-width: 329px) {
+   #form-headline {
+      font-size:1.4rem!important; line-height:1.325rem;
+    }
+ }
+ @media (min-width: 1px) and (max-width: 305px) {
+   #form-headline {
+      font-size:1.6rem!important; line-height:1.825rem;
     }
  }
