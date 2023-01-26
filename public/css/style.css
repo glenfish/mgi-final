@@ -113,7 +113,7 @@
       top: -90px;
       border-radius: 30px;
       border-color: var(--bordercolor);
-      padding: 32px;
+      padding: 16px;
       margin:0px auto;
       /* background-image: linear-gradient(to top, rgba(255,255,255,0.1), rgb(255, 255, 255)); */
       background-color: rgba(255,255,255,0.4);
@@ -997,7 +997,7 @@ margin-top:20px;
 
 }
 
-@media  (max-width:503px) { 
+@media  (max-width:364px) { 
    .break-subheadline {
       display:inline!important;
    
@@ -1184,4 +1184,13 @@ h2.headline{
  input:focus {
    background-color: rgba(255,255,255,0.8)!important;
    border-radius: 6px;
+ }
+ #form-headline {
+   font-size:1.8rem!important; line-height:1.825rem;
+ }
+
+ @media (min-width: 374px) {
+   #form-headline {
+      font-size:1.5rem; line-height:1.825rem;
+    }
  }
