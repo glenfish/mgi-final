@@ -33,8 +33,9 @@
           </div>
           
           <!-- start checkboxes -->
-          <div class=" text-lg font-bold tracking-tight bluetext text-left">Please select <span class="text-xs pl-3 " > (required)</span></div>
-          <div id="checkboxes" class="mt-5">
+          
+          <div id="checkboxes" class="">
+            <div class="mb-5 text-lg font-bold tracking-tight bluetext text-left">Please select <span class="text-xs pl-3 " > (required)</span></div>
           <div class="checkbox-container " style=" ">
             <input type="checkbox" id="i-have-ira" name="ihaveira" class="checkbox" style="width:50px!important;">
             <label for="ihaveira" class="checkbox-label   unselectable" style=" ">I have an IRA worth $100k or more</label>
@@ -47,7 +48,7 @@
            <div id="sms-box" class="hide">
             <div class="relative mb-4">
               <label for="smscode" class="leading-7 text-gray-800 unselectable" style="color: red; font-size:20px!important;">Enter SMS Text Code: </label>
-              <input onclick="this.select()" value="" type="text"  pattern="\d{4}"  maxlength='4' id="smscode" name="smscode" class=" " style="padding-left:5px; color: red; font-size:20px!important;">
+              <input onclick="this.select()" value="" type="text"  pattern="\d{4}"  maxlength='4' id="smscode" name="smscode" class=" " style="padding-left:5px; color: red; font-size:20px!important; line-height:35px;">
               <span class="validity"></span>
             </div>
            </div>

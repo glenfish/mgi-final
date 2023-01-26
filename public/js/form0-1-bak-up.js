@@ -60,11 +60,11 @@ form.addEventListener('submit', function(e) {
             
         postSMS(email, phone)
         } else {
-            alert('Incorrect code. Please check it and try again.');
+            alert('Please try again.');
         }
     } else {
         submitButton.classList.add('hide');
-        alert('We apologize but unfortunately you do not qualify for a Gold IRA at this time.');
+        alert('Based on your response, unfortunately you do not legally qualify for a Gold IRA at this time.');
     }
 });
 
@@ -282,8 +282,9 @@ function validateSMS() {
         submitButton2.setAttribute('disabled', 'disabled');
         sendTheFormData();
     } else {
-    // submitButton.innerHTML = 'ERROR!';
-    alert('Please try again.')
+    alert('Incorrect. Please try again.')
+    document.getElementById("smscode").value = '';
+    document.getElementById("smscode").focus();
     }
  
 }
